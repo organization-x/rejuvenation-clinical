@@ -1,3 +1,11 @@
+@font-face{
+    font-family: "Inter";
+    src: url('assets/Font/static/Inter-SemiBold.ttf') format('truetype');
+}
+
+
+
+
 .websiteBody{
   margin: 0;
 }.Page{
@@ -228,16 +236,15 @@
   display:flex;
 }
 .platform{
-  position:relative;
+  position:absolute;
+  left:50%;
+  top:50%;
   z-index:14;
   pointer-events:none;
-  margin-left:7px;
+  margin-left:-229.415px;
   width:458.83px;
-  min-width:458.83px;
   height:464.07px;
-  margin-top:-471px;
-  margin-bottom:6.930000000000064px;
-  min-height:464.07px;
+  margin-top:-232.035px;
   background-color:rgba(250, 251, 252, 1);
   border-radius:10px;
 }
@@ -248,23 +255,18 @@
   display:flex;
 }
 .Sign-In{
-  position:relative;
+  position:absolute;
+  left:50%;
+  top:10%;
+  margin-left:-66px;
+  margin-top:-24px;
   z-index:20;
   pointer-events:none;
-  margin-left:170px;
-  width:132px;
-  min-width:132px;
-  margin-top:-476px;
-  margin-bottom:428px;
-  min-height:48px;
-  text-align:left;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
+  text-align:center;
   color:rgba(0, 0, 0, 1);
   font-style:normal;
   font-family:Inter;
-  font-weight:600;
+  font-weight:900;
   font-size:40px;
   line-height:49px;
 }
