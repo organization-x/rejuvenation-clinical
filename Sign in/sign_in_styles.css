@@ -113,6 +113,9 @@
     border-radius: 15px;
     position: relative;
 }
+.form-input > input#password {
+    padding-right:85px;
+}
 .Forgot-password{
   position:absolute;
   left:0%;
