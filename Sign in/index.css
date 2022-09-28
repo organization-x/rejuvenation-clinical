@@ -14,7 +14,6 @@
 .sign-in-rectangle{
   position:relative;
   z-index:12;
-  pointer-events:none;
   margin-left:0px;
   width:472px;
   min-width:472px;
@@ -29,7 +28,6 @@
   z-index:13;
   left:50%;
   top:50%;
-  pointer-events:none;
   margin-left:-236px;
   width:472px;
   min-width:472px;
@@ -46,7 +44,6 @@
   left:50%;
   top:50%;
   z-index:14;
-  pointer-events:none;
   margin-left:-229.415px;
   width:458.83px;
   height:464.07px;
@@ -61,7 +58,6 @@
   margin-left:-66px;
   margin-top:-24px;
   z-index:20;
-  pointer-events:none;
   text-align:center;
   color:rgba(0, 0, 0, 1);
   font-style:normal;
@@ -74,7 +70,6 @@
   left:50%;
   top:20%;
   z-index:15;
-  pointer-events:none;
   margin-left:-125px;
   margin-top:-9px;
   text-align:center;
@@ -84,100 +79,45 @@
   font-size:15px;
   line-height:19px;
 }
-.Login-prompt{
-  position:absolute;
-  left:50%;
-  z-index:21;
-  pointer-events:none;
-  margin-left:-196px;
-  width:382px;
-  height:74px;
-  margin-top:-37px;
-  margin-bottom:309px;
+.form-container{
+    position:absolute;
+    left:50%;
+    top:42%;
+    width:382px;
+    height:200px;
+    margin-left:-191px;
+    margin-top:-100px;
 }
-.Email-box{
-  position:absolute;
-  left:50%;
-  top:35%;
-  pointer-events:none;
-  margin-left:-196px;
-  width:382px;
-  height:74px;
-  margin-top:-37px;
-  background-color:rgba(250, 251, 252, 1);
-  border:2px solid rgba(203, 201, 209, 1);
-  box-sizing:border-box;
-  border-radius:15px;
+.form-input{
+    position:relative;
+    margin-top:20px;
 }
-.Password-box {
+.form-input > label {
+    z-index: 31;
     position: absolute;
-    left: 50%;
-    top: 55%;
-    pointer-events: none;
-    margin-left: -196px;
+    padding:0px 0px 0px 10px;
+    font-family: Inter;
+    font-size:20px;
+    color:rgba(92,92,92,1);
+    top: 0;
+    left: 0;
+}
+.form-input > input {
+    z-index: 30;
     width: 382px;
     height: 74px;
-    margin-top: -37px;
-    background-color: rgba(250, 251, 252, 1);
-    border: 2px solid rgba(203, 201, 209, 1);
-    box-sizing: border-box;
-    border-radius: 15px;
-}
-.Email-prompt {
-    position:absolute;
-    top: 50%;
-    left: 0;
-    z-index: 23;
-    pointer-events: none;
-    margin-left: 16px;
-    margin-top: -14.5px;
-    width: 63px;
-    text-align: left;
-    display: flex;
-    color: rgba(146, 146, 146, 1);
+    padding:10px 0px 0px 10px;
     font-family: Inter;
-    font-size: 24px;
-    line-height: 29px;
-}
-.Password-prompt{
-  position:relative;
-  z-index:24;
-  pointer-events:none;
-  margin-left:45px;
-  width:382px;
-  min-width:382px;
-  height:74px;
-  margin-top:-289px;
-  margin-bottom:215px;
-  min-height:74px;
-}
-.Password{
-  position:relative;
-  z-index:26;
-  pointer-events:none;
-  margin-left:16px;
-  width:114px;
-  min-width:114px;
-  margin-top:-49px;
-  margin-bottom:20px;
-  min-height:29px;
-  text-align:left;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
-  color:rgba(146, 146, 146, 1);
-  font-style:normal;
-  font-family:Inter;
-  font-weight:600;
-  font-size:24px;
-  line-height:29px;
+    font-size: 20px;
+    color: rgba(61, 61, 61, 1);
+    border-radius: 15px;
+    position: relative;
 }
 .Forgot-password{
   position:absolute;
   left:0%;
   top:67%;
   z-index:16;
-  pointer-events:none;
   margin-left:35px;
   width:208px;
   margin-top:-14.5px;
@@ -189,18 +129,11 @@
   font-size:24px;
   line-height:29px;
 }
-.Forgot-password--outer{
-  pointer-events:none;
-  z-index:16;
-  position:relative;
-  display:flex;
-}
 .Sign-in-button{
   position:absolute;
   left:50%;
   top:85%;
   z-index:18;
-  pointer-events:none;
   margin-left:-191px;
   width:382px;
   height:73px;
@@ -216,7 +149,6 @@
   left:50%;
   top:50%;
   z-index:19;
-  pointer-events:none;
   margin-left:-111px;
   width:222px;
   margin-top:-17.5px;
@@ -233,7 +165,6 @@
   left:50%;
   top:100%;
   z-index:17;
-  pointer-events:none;
   margin-left:-140.5px;
   width:281px;
   margin-top:24px;
@@ -261,6 +192,7 @@
   position: absolute;
   right:0%;
   top: 50%;
+  z-index:32;
   margin-top:-14.5px;
   margin-right:16px;
   width: 63px;
