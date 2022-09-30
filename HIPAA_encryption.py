@@ -1,6 +1,7 @@
+
 from cryptography.fernet import Fernet
 
-# key = Fernet.generate_key() #generates a random key that can be used.
+key = Fernet.generate_key() # generates a random key that can be used.
 # print (key)
 # file = open('key1', 'wb')
 # file.write(key) #saves the key to a file to be used to both encrypt and decrypt
@@ -43,4 +44,3 @@ encrypted = fernet.encrypt(data)
 
 with open('test.encrypted', 'wb') as f:
     f.write(encrypted)
- 
