@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Sign in</title>
+  <title>Dashboard</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -15,14 +15,9 @@
   <!-- Bootstrap
   -------------------------------------------------- --> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="sign_in_styles.css">
+  <link rel="stylesheet" href="dashboard_styles.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,36 +30,20 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div content="height=device-height, width=device-width, justify-content=center">
         <img class="BG" />
-        <div class="gradient">
+        <div class="search-bar">
+            <input class="search" id="search-bar" />
+            <img class="search-icon" />
         </div>
-        <div class="platform">
-            <div class="Sign-In">
-                <h1>Sign In</h1>
-            </div>
-            <div class="Stay-updated">
-                <p>Stay updated on your clinical trials</p>
-            </div>
-            <form class="form-container" method="post" action="TBD">
-                <div class="form-input">
-                    <label>Email</label>
-                    <input id="email" type="email"/>
-                </div>
-                <div class="form-input">
-                    <label>Password</label>
-                    <input id="password" type="password"/>
-                    <p class="show">show</p>
-                </div>
-            </form>
-            <div class="Forgot-password">
-                <p>Forgot Password</p>
-            </div>
-            <button class="Sign-in-button">
-                <p class="Sign-in-button-text">Sign in</p>
-            </button>
-            <div class="Sign-up-link">
-                <p class="New-to">New to [app name]?</p>
-                <p class="Sign-up">Sign up</p>
-            </div>
+        <div class="trials-display">
+            <div class="trial-box"></div>
+            <div class="trial-box"></div>
+            <div class="trial-box"></div>
+            <div class="trial-box"></div>
+            <div class="trial-box"></div>
+            <div class="trial-box"></div>
+            <div class="trial-box"></div>
+            <div class="trial-box"></div>
+            <div class="trial-box"></div>
         </div>
     </div>
     <!-- End Document
