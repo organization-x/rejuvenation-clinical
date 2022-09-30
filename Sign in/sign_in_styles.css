@@ -11,29 +11,18 @@
   height:100%;
   content:url(assets/images/background.jpg)
 }
-.sign-in-rectangle{
-  position:relative;
-  z-index:12;
-  margin-left:0px;
-  width:472px;
-  min-width:472px;
-  height:477px;
-  margin-top:0px;
-  margin-bottom:42px;
-  min-height:477px;
-  filter:drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.25));
-}
-.platform{
-  position:absolute;
-  left:50%;
-  top:50%;
-  z-index:14;
-  margin-left:-229.415px;
-  width:458.83px;
-  height:464.07px;
-  margin-top:-232.035px;
-  background-color:rgba(250, 251, 252, 1);
-  border-radius:10px;
+.platform {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 14;
+    margin-left: -229.415px;
+    width: 458.83px;
+    height: 464.07px;
+    margin-top: -232.035px;
+    background-color: rgba(250, 251, 252, 1);
+    border-radius: 10px;
+    filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.3));
 }
 .Sign-In{
   position:absolute;
@@ -99,6 +88,21 @@
 }
 .form-input > input#password {
     padding-right:75px;
+}
+
+.form-input > input#submit {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    z-index: 18;
+    margin-left: -191px;
+    width: 382px;
+    height: 73px;
+    margin-top: -36.5px;
+    background-color: rgba(75, 107, 188, 1);
+    border: 1px solid rgba(167, 167, 167, 0.51);
+    box-sizing: border-box;
+    border-radius: 40px;
 }
 .Forgot-password{
   position:absolute;
