@@ -185,7 +185,7 @@ content:url(assets/images/background.png)
 /*form*/
 .form-container{
   position:absolute;
-  top:30%;
+  top:25%;
   width:600px;
   height:895px;
   left: 50%;
@@ -265,24 +265,24 @@ content:url(assets/images/background.png)
   border-radius: 10px;
   filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.3));
 }
-.Stay-updated-on-your{
-  position: absolute;
-  left: 50%;
-  margin-left: -16;
-  top: 10%;
-  z-index: 20;
-  justify-content:flex-start;
+.Stay-updated{
+  position:absolute;
+  left:50%;
+  top:13%;
+  z-index:15;
+  margin-left:-125px;
+  margin-top:-9px;
+  text-align:center;
   color:rgba(61, 61, 61, 1);
   font-style:normal;
   font-family:Inter;
-  font-weight:600;
   font-size:15px;
   line-height:19px;
 }
 .Sign-Up{
   position:absolute;
   left:50%;
-  top:5%;
+  top:7%;
   margin-left:-66px;
   margin-top:-24px;
   z-index:20;
