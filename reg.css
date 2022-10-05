@@ -259,7 +259,7 @@ content:url(assets/images/background.png)
   z-index: 14;
   margin-left: -229.415px;
   width: 599.79px;
-  height: 964.54px;
+  height: 900px;
   margin-top: -232.035px;
   background-color: rgba(250, 251, 252, 1);
   border-radius: 10px;
@@ -636,25 +636,26 @@ content:url(assets/images/background.png)
   margin-top:-169px;
   margin-bottom:96px;
   min-height:73px;
-
-
 }
-.create-account{
-  position:absolute;
-  left:50%;
-  top:85%;
-  z-index:18;
-  margin-left:-191px;
-  width:382px;
-  height:73px;
-  margin-top:-169.5px;
-  background-color:rgba(75, 107, 188, 1);
-  filter:drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.15));
-  border:1px solid rgba(167, 167, 167, 0.51);
-  box-sizing:border-box;
-  border-radius:40px;
+.Create-account-button {
+    position: absolute;
+    left: 50%;
+    top: 72%;
+    z-index: 18;
+    margin-left: -191px;
+    width: 382px;
+    height: 73px;
+    margin-top: -36.5px;
+    background-color: rgba(75, 107, 188, 1);
+    filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.15));
+    border: 1px solid rgba(167, 167, 167, 0.51);
+    box-sizing: border-box;
+    border-radius: 40px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-size: 30px;
 }
-.Sign-up-button-text{
+.Create-account-button-text{
   position:absolute;
   left:50%;
   top:50%;
