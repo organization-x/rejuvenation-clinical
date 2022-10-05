@@ -1,6 +1,4 @@
-# ![Rejuvenation Tech Logo](readme_static/rejuvenation_logo.png)
-
-# Rejuvenation Tech (Natural Trials) Clinical Trials Platform
+# ![Rejuvenation Tech Logo](readme_static/rejuvenation_logo.png) Rejuvenation Tech (Natural Trials) Clinical Trials Platform
 ## Table of Contents
 * [Introduction](#Introduction)
 * [Tech Stack](#tech-stack)
