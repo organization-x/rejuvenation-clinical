@@ -213,7 +213,7 @@ content:url(assets/images/background.png)
   z-index: 30;
   width: 382px;
   height: 74px;
-  padding:10px 0px 0px 10px;
+  padding:37px 0px 0px 10px;
   font-family: Inter;
   font-size: 20px;
   color: rgb(94, 94, 94);
@@ -259,7 +259,7 @@ content:url(assets/images/background.png)
   z-index: 14;
   margin-left: -229.415px;
   width: 599.79px;
-  height: 900px;
+  height: 932px;
   margin-top: -232.035px;
   background-color: rgba(250, 251, 252, 1);
   border-radius: 10px;
@@ -640,7 +640,7 @@ content:url(assets/images/background.png)
 .Create-account-button {
     position: absolute;
     left: 50%;
-    top: 72%;
+    top: 80%;
     z-index: 18;
     margin-left: -191px;
     width: 382px;
