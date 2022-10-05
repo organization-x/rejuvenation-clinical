@@ -26,7 +26,7 @@
 }
 .logo {
   margin: 2rem;
-  height: 80px;
+  height: 50px;
   cursor: pointer;
 }
 .prime-header {
@@ -44,8 +44,8 @@
 @media (min-width: 40rem) {
   .prime-nav {
     --gap: clamp(1.3rem, 4vw, 6rem);
-    padding-block: 1.5rem;
-    padding-inline: clamp(1rem, 5vw, 5rem)
+    padding-block: 2.5rem;
+    padding-inline: clamp(1rem, 5vw, 0rem)
   }
 }
 @media (max-width: 40em) {
@@ -139,7 +139,7 @@ a {
   color:#2B1C50;
   font-weight: 600;
   font-size: 20px;
-  padding: 0 10px; 
+  padding: 0 10px;
 }
 a.active::after {
   content: "";
@@ -150,8 +150,8 @@ a.active::after {
   left: 0;
   bottom: -10px;
   border-top-left-radius: 2px;
-  border-top-right-radius: 2px; 
- 
+  border-top-right-radius: 2px;
+
 }
 a::after {
   content: "";
@@ -162,7 +162,7 @@ a::after {
   left: 0;
   bottom: -10px;
   border-top-left-radius: 2px;
-  border-top-right-radius: 2px; 
+  border-top-right-radius: 2px;
   transition: 0.3s;
 }
 a:hover::after {
@@ -185,7 +185,7 @@ content:url(assets/images/background.png)
 /*form*/
 .form-container{
   position:absolute;
-  top:42%;
+  top:30%;
   width:600px;
   height:895px;
   left: 50%;
@@ -195,6 +195,7 @@ content:url(assets/images/background.png)
 .form-input{
   position:relative;
   margin-top:20px;
+  left:18%
 }
 
 
@@ -239,7 +240,6 @@ content:url(assets/images/background.png)
 }
 .form-input > input#name {
   z-index: 30;
-  width: 239.18px;
   height: 74px;
   padding:10px 0px 0px 10px;
   font-family: Inter;
@@ -255,7 +255,7 @@ content:url(assets/images/background.png)
   position: absolute;
   content: "";
   left: 50%;
-  top: 50%;
+  top: 40%;
   z-index: 14;
   margin-left: -229.415px;
   width: 599.79px;
