@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Inter-semibold";
-    src: url('assets/Font/static/Inter-SemiBold.ttf') format('truetype');
+    src: url('fonts/Inter-SemiBold.ttf') format('truetype');
 }
 @font-face {
     font-family: "Inter";
-    src: url('assets/Font/static/Inter-Regular.ttf') format('truetype');
+    src: url('fonts/Inter-Regular.ttf') format('truetype');
 }
 
 /*basic set up*/
@@ -293,18 +293,6 @@ input:focus, textarea:focus, select:focus {
     text-align: center;
     line-height: 64px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .Trial-Name-1{
