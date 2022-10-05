@@ -7,7 +7,7 @@
     src: url('assets/Font/static/Inter-Regular.ttf') format('truetype');
 }
 
-*basic set up*/
+/*basic set up*/
 /*background*/
 *,
 *:before,
@@ -24,6 +24,11 @@
   height:auto;
   pointer-events:auto;
 }
+
+head {
+  overflow-x: hidden;
+}
+
 /*nav*/
 .flex {
   display: flex;
@@ -172,9 +177,6 @@ a::after {
 }
 a:hover::after {
   width: 100%;
-}
-head {
-  overflow-x: hidden;
 }
 
 .BG{
