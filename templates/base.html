@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% load static %}
 
   <!-- Basic Page Needs !-->
   <meta charset="utf-8">
@@ -21,13 +22,14 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="{% static 'css/informed_consent.css' %}">
-  <link rel="stylesheet" href="{% static 'css/sign_in.css' %}">
-  <link rel="stylesheet" href="{% static 'css/single_trial.css' %}">
+  <link rel="stylesheet" href="{% static 'customcss/css/dashboard.css' %}">
+  <link rel="stylesheet" href="{% static 'customcss/css/informed_consent.css' %}">
+  <link rel="stylesheet" href="{% static 'customcss/css/sign_in.css' %}">
+  <link rel="stylesheet" href="{% static 'customcss/css/single_trial.css' %}">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="assets/images/temp_icon.png">
+  <link rel="icon" type="image/png" href="{% static 'images/temp_icon.png' %}">
 
 </head>
 

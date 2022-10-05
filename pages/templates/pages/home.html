@@ -3,16 +3,16 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block content %}
+{% load static %}
 {% if user.is_authenticated %}
 
   <!-- Dashboard layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link rel="icon" type="image/png" href="assets/images/temp_icon.png">
   <div content="height=device-height, width=device-width, justify-content=center">
       <img class="BG" />
       <div class="search-bar">
           <input class="search" id="search-bar" />
-          <img class="search-icon" />
+          <img class="search-icon"/>
       </div>
       <div class="trials-display">
           <div class="trial-box">
