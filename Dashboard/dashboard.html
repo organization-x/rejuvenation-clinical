@@ -13,7 +13,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
   <!-- Bootstrap
-  -------------------------------------------------- --> 
+  -------------------------------------------------- -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -29,6 +29,32 @@
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div content="height=device-height, width=device-width, justify-content=center">
+      <Header class="prime-header flex">
+        <div>
+          <img src="assets/images/rejuvenation_tech_logo_words.png" alt="logo" class="logo">
+        </div>
+
+        <button class="mobile-nav-toggle"
+        aria-controls="prime-nav" aria-expanded="flase">
+        <span class="sr-only">Menu</span>
+        <span class="top-line common"></span>
+        <span class="middle-line common"></span>
+        <span class="bottom-line common"></span>
+      </button>
+
+      <nav>
+        <ul id="prime-nav" data-visible="false" class="prime-nav flex">
+          <li>
+            <a href="https://rejuvenationtech.com">Home</a>
+          </li>
+          <li>
+            <a href="https://rejuvenationtech.com/Team/">About</a>
+          </li>
+          <li>
+            <a href=""> <img src="assets/images/profile_icon.png" alt="Profile Icon" height="100%" width="15%"></a>
+          </li>
+        </nav>
+      </Header>
         <img class="BG" />
         <div class="search-bar">
             <input class="search" id="search-bar" />
@@ -38,7 +64,7 @@
             <div class="trial-box">
                 <h1>Trial Name</h1>
                 <h4>Lab name</h4>
-                <p>Short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                <p>Short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Est ante in nibh mauris cursus.</p>
                 <div class="key-term-1">
                     <p>Key Term 1</p>
