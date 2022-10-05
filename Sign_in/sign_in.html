@@ -79,8 +79,18 @@
                 </div>
                 <div class="form-input">
                     <label>Password</label>
-                    <input id="password" type="password" required/>
-                    <p class="show">show</p>
+                    <input id="passwordBox" type="password" required/>
+                    <p class="show" onclick="togglePassword()">show</p>
+                    <script>
+                    function togglePassword() {
+                      var x = document.getElementById("passwordBox");
+                      if (x.type === "password") {
+                        x.type = "text";
+                      } else {
+                        x.type = "password";
+                      }
+                    }
+                    </script>
                 </div>
                 <input type="submit" class="Sign-in-button" value="Sign In" />
             </form>
