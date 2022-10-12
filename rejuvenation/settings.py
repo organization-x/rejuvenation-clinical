@@ -45,6 +45,10 @@ AUTHENTICATION_BACKENDS = (
 
 INSTALLED_APPS = [
     # third party apps
+    'django_otp',
+    'django_otp.plugins.otp_static',
+    'django_otp.plugins.otp_totp',
+    'two_factor',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -62,6 +66,8 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django_otp.middleware.OTPMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -158,3 +164,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = "home"
 # successful logout redirect url
 LOGOUT_REDIRECT_URL = "home"
+
+LOGIN_URL = 'two_factor:login'
+
+from two_factor.urls import urlpatterns as tf_urls
+urlpatterns = [
+   url(r'', include(tf_urls)),
+    ...
+]
+
