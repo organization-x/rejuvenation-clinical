@@ -41,7 +41,74 @@
         <img class="BG" />
         <div class="navigation-adjustment">
             <form class="trial-info">
-
+                <div class="trial-name">
+                    <label class="indicator">Trial Name</label>
+                    <input id="trial-name" type="text" class="input-box" value="New Trial" required />
+                </div>
+                <div class="key-word">
+                    <label class="indicator">Keyword 1</label>
+                    <select id="keyword-1" class="input-box">
+                        <option value="example 1">Example 1</option>
+                        <option value="example 2">Example 2</option>
+                        <option value="example 3">Example 3</option>
+                    </select>
+                </div>
+                <div class="key-word">
+                    <label class="indicator">Keyword 2</label>
+                    <select id="keyword-2" class="input-box">
+                        <option value="example 1">Example 1</option>
+                        <option value="example 2">Example 2</option>
+                        <option value="example 3">Example 3</option>
+                    </select>
+                </div>
+                <div class="description">
+                    <label class="indicator">Description (250 character limit)</label>
+                    <textarea class="input-box extra-padding" maxlength="250"></textarea>
+                </div>
+                <div class="to-do-list">
+                    <h1 class="header">To-do List Items</h1>
+                    <button class="add-button">+</button>
+                    <div class="to-do-container">
+                        <!--One full to-do list item ------------------------------>
+                        <div class="to-do-item">
+                            <div class="to-do-part">
+                                <label class="indicator">Step Title</label>
+                                <input class="input-box" id="step-description" />
+                            </div>
+                            <div class="to-do-part">
+                                <label class="indicator">Link</label>
+                                <input class="input-box" id="link" type="url"/>
+                            </div>
+                        </div>
+                        <!--------------------------------------------------------->
+                    </div>
+                </div>
+                <div class="demographic-list">
+                    <h1 class="header">Demographics</h1>
+                    <button class="add-button">+</button>
+                    <div class="demographic-container">
+                        <!--One full demographic/requirement----------------------->
+                        <div class="demographic-item">
+                            <div class="demographic-part">
+                                <label class="indicator">Category</label>
+                                <select class="input-box" id="category">
+                                    <option value="example 1">Age</option>
+                                    <option value="example 2">Blood Pressure</option>
+                                    <option value="example 3">obligatory #3</option>
+                                </select>
+                            </div>
+                            <div class="demographic-half-part">
+                                <label class="indicator">Min</label>
+                                <input class="input-box" id="min" type="number"/>
+                            </div>
+                            <div class="demographic-half-part">
+                                <label class="indicator">Max</label>
+                                <input class="input-box" id="max" type="number"/>
+                            </div>
+                       </div>
+                       <!---------------------------------------------------------->
+                    </div>
+                </div>
             </form>
         </div>
     </div>
