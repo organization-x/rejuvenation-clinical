@@ -15,10 +15,11 @@
   content:url(assets/images/background.jpg)
 }
 .navigation-adjustment{
-    position:absolute;
-    top:200px;
+    position:fixed;
+    top:120px;
     width:100%;
-    height:auto;
+    height:calc(100% - 200px);
+    overflow-y:auto;
 }
 .trial-info{
     position:absolute;
