@@ -33,12 +33,6 @@ class CustomAccountManager(BaseUserManager):
 
     # LATER: CREATE A 'LAB' USER
 
-def get_profile_image_filepath(self):
-    return f'profile_images/{self.pk}/{"profile_image.png"}'
-
-def get_default_profile_image():
-    return "statictesting/rejuvenation_tech_logo_words.png"
-
 class Account(AbstractBaseUser):
 
     email                   = models.EmailField(verbose_name="email", max_length=60, unique=True)
@@ -49,8 +43,6 @@ class Account(AbstractBaseUser):
     is_active               = models.BooleanField(default=True)
     is_staff                = models.BooleanField(default=False)
     is_superuser            = models.BooleanField(default=False)
-    profile_image           = models.ImageField(max_length=255, upload_to=get_profile_image_filepath, null=True, blank=True, default=get_default_profile_image)
-    # TO BE CHANGED TO MEDICAL DOCUMENTS
 
     objects = CustomAccountManager()
 
@@ -59,9 +51,6 @@ class Account(AbstractBaseUser):
 
     def __str__(self):
         return self.username
-
-    def get_medical_document_filenames(self):
-        return str(self.profile_image)[str(self.profile_image).index(f'profile_images/{self.pk}/'):]
 
     def has_perm(self, perm, obj=None):
         return self.is_admin

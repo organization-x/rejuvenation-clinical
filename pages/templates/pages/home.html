@@ -1,14 +1,12 @@
 {% extends 'base.html' %}
 
-{% block title %}Dashboard{% endblock %}
-
 {% block content %}
 {% load static %}
 {% if user.is_authenticated %}
 
   <!-- Dashboard layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="{% static 'customcss/css/dashboard.css' %}">
+  <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
   <div content="height=device-height, width=device-width, justify-content=center">
       <div class="search-bar">
           <input class="search" id="search-bar" />
