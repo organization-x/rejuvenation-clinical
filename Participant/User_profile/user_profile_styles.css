@@ -163,8 +163,11 @@
     border-color: rgb(0,32,112);
 }
 .history-chart{
-    position:relative;
-    height:250px;
-    width:250px;
+    position:absolute;
+    bottom:10%;
+    left:1%;
+    z-index:3;
+    max-height:220px;
+    max-width:392px;
     overflow:auto;
 }
