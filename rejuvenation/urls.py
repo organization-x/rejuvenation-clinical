@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path, include
-
+from two_factor.urls import urlpatterns as tf_urls
+from .views import home_view, auth_view, verify_view
 from pages.views import (
     home_screen_view
 )
@@ -26,7 +27,9 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("accounts.urls")),
     path("accounts/", include("django.contrib.auth.urls")),
-    path("", home_screen_view, name='home'),
+    path("", home_view, name='home'),
+    path('login/', auth_view, name='login-view'),
+    path('verify/', verify_view, name = 'verify-view')
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

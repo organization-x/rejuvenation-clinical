@@ -45,29 +45,30 @@ AUTHENTICATION_BACKENDS = (
 
 INSTALLED_APPS = [
     # third party apps
-    'django_otp',
-    'django_otp.plugins.otp_static',
-    'django_otp.plugins.otp_totp',
-    'two_factor',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'codes'
+    'users'
+    #pip install django-crispy-forms
+    'crispy_forms'
     # my apps
     'pages',
     'accounts',
 ]
-
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+LOGIN_URL = '/login/'
+AUTH_USER_MODEL = 'users.CustomUser'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django_otp.middleware.OTPMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -166,7 +167,6 @@ LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
 
 LOGIN_URL = 'two_factor:login'
-
 from two_factor.urls import urlpatterns as tf_urls
 urlpatterns = [
    url(r'', include(tf_urls)),
