@@ -416,7 +416,7 @@ content:url(assets/images/background.png)
   box-sizing:border-box;
   border-radius:15px;
 }
-.Address{
+.Country{
   position:relative;
   z-index:33;
   pointer-events:none;
