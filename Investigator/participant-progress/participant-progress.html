@@ -29,7 +29,7 @@
   <link rel="icon" type="image/png" href="assets/images/temp_icon.png">
 
     </head>
-    <body>
+<body>
     <div content="height=device-height, width=device-width, justify-content=center">
         <!-- Primary Page Layout
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -44,6 +44,11 @@
                             <input type="checkbox" checked="" />
                             <p class="task-info">Completed task (no wrapping yet so has to be 1 line)</p>
                         </div>
+                        <div class="task file-attached">
+                            <input type="checkbox" checked />
+                            <p class="task-info">Completed task with file attached</p>
+                        </div>
+                        <embed class="file-viewer" src="assets/images/blood-test.pdf" />
                         <div class="task">
                             <input type="checkbox" disabled />
                             <p>Incomplete task</p>
@@ -54,9 +59,14 @@
                 <div class="progress">
                     <div class="task-list">
                         <div class="task">
-                            <input type="checkbox" checked="" />
-                            <p class="task-info">Completed task (no wrapping yet so has to be 1 line)</p>
+                            <input type="checkbox" checked />
+                            <p class="task-info">Completed task (no wrapping so has to be 1 line)</p>
                         </div>
+                        <div class="task file-attached">
+                            <input type="checkbox" checked />
+                            <p class="task-info">Completed task with file attached</p>
+                        </div>
+                        <embed class="file-viewer" src="assets/images/blood-test.pdf" />
                         <div class="task">
                             <input type="checkbox" disabled />
                             <p>Incomplete task</p>
@@ -69,8 +79,23 @@
     <!-- End Document
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script>
-        //I don't know how this hides the content initially, but it works so I'm not complaining.
         var coll = document.getElementsByClassName("participant");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script>
+        var coll = document.getElementsByClassName("file-attached");
         var i;
 
         for (i = 0; i < coll.length; i++) {

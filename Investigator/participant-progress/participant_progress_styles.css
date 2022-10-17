@@ -51,10 +51,9 @@
     margin-top:10px;
 }
 .progress {
-    position: relative;
     display: none;
     width: 750px;
-    height: 500px;
+    height: fit-content;
     overflow-y: auto;
     border-radius: 10px;
     border-width: 2px;
@@ -67,11 +66,12 @@
     position:relative;
     margin-left:10px;
     width:730px;
-    height:490px;
     overflow-y:auto;
+    overflow-x:hidden;
 }
 .task {
     position: relative;
+    z-index:3;
     width: 730px;
     height: 30px;
     margin-top: 10px;
@@ -94,5 +94,17 @@
     font-family: Inter;
     color: rgb(0,32,112);
     overflow: hidden
+}
+.file-attached{
+    position:relative;
+}
+.file-viewer {
+    position:relative;
+    height: 800px;
+    width: 730px;
+    margin-top:-8px;
+    overflow-y: auto;
+    margin-top:10px;
+    display:none;
 }
 
