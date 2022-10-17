@@ -14,6 +14,10 @@
   height:100%;
   content:url(assets/images/background.jpg)
 }
+.flex-row{
+    display:flex;
+    flex-direction:row;
+}
 .navigation-adjustment{
     position:fixed;
     top:120px;
@@ -124,13 +128,36 @@
     display:flex;
     flex-direction:row;
 }
-.to-do-part{
+.to-do-step{
     position:relative;
     margin-left:15px;
     width: 450px;
     height:60px;
     font-family:Inter;
     font-size:20px;
+}
+.to-do-interactable{
+    position: relative;
+    margin-left: 15px;
+    width: 225px;
+    height: 60px;
+    font-family: Inter;
+    font-size: 20px;
+}
+.file-checkbox {
+    margin-top:14px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.to-do-interactable > p{
+    position:relative;
+    margin-top:14px;
+    margin-left:5px;
+    color:rgb(0,32,112);
+    font-family:Inter;
+    font-size:24px;
+    height:30px;
 }
 .demographic-list {
     position: relative;
