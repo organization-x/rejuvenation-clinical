@@ -207,7 +207,7 @@
     width: 1400px;
     height: auto;
     min-height: 60px;
-    /*re-set max-height to fit preview image of consent form (will likelly not work)*/
+    /*re-set max-height to fit preview image of consent form (will likely not work)*/
     max-height: 60px;
     display:flex;
     flex-direction:row;
