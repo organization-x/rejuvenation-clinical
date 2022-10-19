@@ -259,7 +259,7 @@ content:url(assets/images/background.png)
   z-index: 14;
   margin-left: -229.415px;
   width: 599.79px;
-  height: 932px;
+  height: 850px;
   margin-top: -232.035px;
   background-color: rgba(250, 251, 252, 1);
   border-radius: 10px;
@@ -416,7 +416,7 @@ content:url(assets/images/background.png)
   box-sizing:border-box;
   border-radius:15px;
 }
-.Country{
+.Address{
   position:relative;
   z-index:33;
   pointer-events:none;
@@ -640,7 +640,7 @@ content:url(assets/images/background.png)
 .Create-account-button {
     position: absolute;
     left: 50%;
-    top: 80%;
+    top: 72%;
     z-index: 18;
     margin-left: -191px;
     width: 382px;
