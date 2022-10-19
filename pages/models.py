@@ -1,5 +1,5 @@
 from django.db import models
-from users.models import CustomUser
+from .models import CustomUser
 import random
 # Create your models here.
 class Code(models.Model):

@@ -167,9 +167,5 @@ LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
 
 LOGIN_URL = 'two_factor:login'
-from two_factor.urls import urlpatterns as tf_urls
-urlpatterns = [
-   url(r'', include(tf_urls)),
-    ...
-]
+
 
