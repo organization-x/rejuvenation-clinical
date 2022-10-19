@@ -6,8 +6,8 @@ from django.views import generic
 
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login
-from codes.forms import CodeForm
-from users.models import CustomUser
+from .forms import CodeForm
+from .models import CustomUser
 from .utils import send_sms
 from django.shortcuts import redirect
 # Create your views here.
