@@ -155,10 +155,25 @@
         color: rgba(0,0,0,1);
     }
 
-.join {
+.to-progress {
     position: absolute;
     left: 50%;
-    margin-left: -74px;
+    top: 90%;
+    z-index: 38;
+    width: 148px;
+    height: 64px;
+    background-color: rgba(75, 107, 188, 1);
+    border: 1px solid rgba(167, 167, 167, 0.51);
+    border-radius: 20px;
+    font-family: Inter-semibold;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    line-height: 64px;
+}
+.to-edit {
+    position: absolute;
+    left: 25%;
     top: 90%;
     z-index: 38;
     width: 148px;
@@ -175,7 +190,7 @@
 
 .key-term-1 {
     position: absolute;
-    left: 50%;
+    right:25%;
     top: 5%;
     z-index: 38;
     width: 148px;
