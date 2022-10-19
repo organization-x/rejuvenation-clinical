@@ -58,7 +58,7 @@
 }
 .trial-name{
     position:relative;
-    width:770px;
+    width:685px;
     height:70px;
     font-family:Inter-semibold;
     font-size:32px;
@@ -71,6 +71,23 @@
     font-size:32px;
     margin-left:15px;
     font-family:Inter-semibold;
+}
+.edit-button {
+    position: relative;
+    margin-left: 15px;
+    width: 70px;
+    height: 70px;
+    background-color:white;
+    border-radius: 10px;
+    border-width: 2px;
+    border: solid;
+    border-color: rgb(0,32,112);
+    padding:5px 5px;
+}
+.edit-img{
+    position:relative;
+    height:60px;
+    width:60px;
 }
 .description{
     position:relative;

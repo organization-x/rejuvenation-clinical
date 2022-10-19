@@ -50,6 +50,25 @@
     font-family:Inter-semibold;
     text-align:center;
 }
+.edit-button {
+    position: relative;
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border-width: 2px;
+    border: solid;
+    border-color: rgb(0,32,112);
+    margin-left:20px;
+    margin-top:5px;
+}
+.edit-img {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-left:-2px;
+}
 .info-form {
     position: absolute;
     left: 0;
@@ -84,39 +103,76 @@
     top: 4%;
     overflow-y: auto;
 }
-.trial{
+.trial-box {
     position: relative;
-    margin: 10px 0px 0px 16px;
+    margin: 10px 0px 0px 10px;
     overflow: hidden;
     z-index: 27;
     width: 640px;
-    height: 380px;
+    height: 700px;
     background-color: rgba(217, 217, 217, 1);
     border-radius: 15px;
 }
-.trial > h1 {
+
+    .trial-box > h1 {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        font-family: Inter-semibold;
+    }
+
+    .trial-box > h4 {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        font-family: Inter-semibold;
+    }
+
+    .trial-box > h5 {
+        position: absolute;
+        top: 27%;
+        left: 5%;
+        font-family: Inter-semibold;
+    }
+
+    .trial-box > p {
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        width: 576px;
+        font-family: Inter-semibold;
+        font-size: 20px;
+        color: rgba(0,0,0,1);
+    }
+
+    .trial-box > p1 {
+        position: absolute;
+        top: 75%;
+        left: 5%;
+        width: 576px;
+        font-family: Inter-semibold;
+        font-size: 20px;
+        color: rgba(0,0,0,1);
+    }
+
+.join {
     position: absolute;
-    top: 5%;
-    left: 5%;
+    left: 50%;
+    margin-left: -74px;
+    top: 90%;
+    z-index: 38;
+    width: 148px;
+    height: 64px;
+    background-color: rgba(75, 107, 188, 1);
+    border: 1px solid rgba(167, 167, 167, 0.51);
+    border-radius: 20px;
     font-family: Inter-semibold;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    line-height: 64px;
 }
 
-.trial > h4 {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    font-family: Inter-semibold;
-}
-
-.trial > p {
-    position: absolute;
-    top: 70%;
-    left: 5%;
-    width: 576px;
-    font-family: Inter-semibold;
-    font-size: 20px;
-    color: rgba(0,0,0,1);
-}
 .key-term-1 {
     position: absolute;
     left: 50%;
