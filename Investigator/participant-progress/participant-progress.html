@@ -32,83 +32,85 @@
 <body>
     <div content="height=device-height, width=device-width, justify-content=center">
         <!-- Primary Page Layout
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <img class="BG" />
-        <div class="platform">
-            <h1 class="trial-name">Trial Name</h1>
-            <div class="participant-list">
-                <button class="participant">Participant Name</button>
-                <div class="progress">
-                    <div class="task-list">
-                        <div class="task">
-                            <input type="checkbox" checked="" />
-                            <p class="task-info">Completed task (no wrapping yet so has to be 1 line)</p>
-                        </div>
-                        <div class="task file-attached">
-                            <input type="checkbox" checked />
-                            <p class="task-info">Completed task with file attached</p>
-                        </div>
-                        <embed class="file-viewer" src="assets/images/blood-test.pdf" />
-                        <div class="task">
-                            <input type="checkbox" disabled />
-                            <p>Incomplete task</p>
+        <div class="navigation-adjustment">
+            <div class="platform">
+                <h1 class="trial-name">Trial Name</h1>
+                <div class="participant-list">
+                    <button class="participant">Participant Name</button>
+                    <div class="progress">
+                        <div class="task-list">
+                            <div class="task">
+                                <input type="checkbox" checked="" />
+                                <p class="task-info">Completed task (no wrapping yet so has to be 1 line)</p>
+                            </div>
+                            <div class="task file-attached">
+                                <input type="checkbox" checked />
+                                <p class="task-info">Completed task with file attached</p>
+                            </div>
+                            <embed class="file-viewer" src="assets/images/blood-test.pdf" />
+                            <div class="task">
+                                <input type="checkbox" disabled />
+                                <p>Incomplete task</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <button class="participant">Participant Name</button>
-                <div class="progress">
-                    <div class="task-list">
-                        <div class="task">
-                            <input type="checkbox" checked />
-                            <p class="task-info">Completed task (no wrapping so has to be 1 line)</p>
-                        </div>
-                        <div class="task file-attached">
-                            <input type="checkbox" checked />
-                            <p class="task-info">Completed task with file attached</p>
-                        </div>
-                        <embed class="file-viewer" src="assets/images/blood-test.pdf" />
-                        <div class="task">
-                            <input type="checkbox" disabled />
-                            <p>Incomplete task</p>
+                    <button class="participant">Participant Name</button>
+                    <div class="progress">
+                        <div class="task-list">
+                            <div class="task">
+                                <input type="checkbox" checked />
+                                <p class="task-info">Completed task (no wrapping so has to be 1 line)</p>
+                            </div>
+                            <div class="task file-attached">
+                                <input type="checkbox" checked />
+                                <p class="task-info">Completed task with file attached</p>
+                            </div>
+                            <embed class="file-viewer" src="assets/images/blood-test.pdf" />
+                            <div class="task">
+                                <input type="checkbox" disabled />
+                                <p>Incomplete task</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Document
+        <!-- End Document
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script>
-        var coll = document.getElementsByClassName("participant");
-        var i;
+        <script>
+            var coll = document.getElementsByClassName("participant");
+            var i;
 
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-    </script>
-    <script>
-        var coll = document.getElementsByClassName("file-attached");
-        var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+        <script>
+            var coll = document.getElementsByClassName("file-attached");
+            var i;
 
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-    </script>
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
 </body>
 </html>
