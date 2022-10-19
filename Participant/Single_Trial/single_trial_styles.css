@@ -215,12 +215,15 @@ button:focus{
 }
 .quarter-box {
     position: relative;
-    z-index:2;
-    width:600px;
-    height:365px;
-    border-radius:10px;
-    background-color:rgb(255,255,255);
-    margin-left:20px;
+    z-index: 2;
+    width: 600px;
+    height: 365px;
+    border-radius: 10px;
+    background-color: rgb(255,255,255);
+    margin-left: 20px;
+    border-width: 2px;
+    border: solid;
+    border-color: rgb(0,32,112);
 }
 .quarter-box > h1{
     position:relative;
