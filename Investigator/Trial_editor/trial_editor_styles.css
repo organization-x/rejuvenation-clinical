@@ -20,7 +20,7 @@
 }
 .navigation-adjustment{
     position:fixed;
-    top:120px;
+    top:140px;
     width:100%;
     height:calc(100% - 120px);
     overflow-y:auto;
