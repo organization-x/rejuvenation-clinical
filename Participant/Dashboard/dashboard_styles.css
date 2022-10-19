@@ -223,7 +223,7 @@ input:focus, textarea:focus, select:focus {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    width:1300px;
+    width:1500px;
     height:fit-content;
     top:28%;
     left:50%;
@@ -243,19 +243,19 @@ input:focus, textarea:focus, select:focus {
 .trial-box > h1{
     position:absolute;
     top:5%;
-    left:5%;
+    left:3%;
     font-family:Inter-semibold;
 }
 .trial-box > h4{
     position:absolute;
     top:20%;
-    left:5%;
+    left:3%;
     font-family:Inter-semibold;
 }
 .trial-box > h5{
     position: absolute;
     top: 27%;
-    left: 5%;
+    left: 3%;
     font-family:Inter-semibold;
 }
 .trial-box > p{
