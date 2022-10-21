@@ -175,10 +175,18 @@ head {
 
 .BG{
   position:fixed;
-  z-index:1;
+  z-index:-1;
   width:100%;
   height:100%;
   content:url(assets/images/background.jpg)
+}
+.navigation-adjustment {
+    position: absolute;
+    left: 0;
+    top: 139px;
+    height: calc(100% - 139px);
+    width: 100%;
+    overflow-y: auto
 }
 .platform {
     position: absolute;

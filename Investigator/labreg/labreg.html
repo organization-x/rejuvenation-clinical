@@ -33,89 +33,89 @@
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div content="height=device-height, width=device-width, justify-content=center">
-        <img class="BG" />
+    <Header class="prime-header flex">
+        <div>
+            <img src="assets/images/rejuvenation_tech_logo_words.png" alt="logo" class="logo">
         </div>
-            <Header class="prime-header flex">
-              <div>
-                <img src="assets/images/rejuvenation_tech_logo_words.png" alt="logo" class="logo">
-              </div>
 
-                <button class="mobile-nav-toggle"
-                aria-controls="prime-nav" aria-expanded="flase">
-                <span class="sr-only">Menu</span>
-                <span class="top-line common"></span>
-                <span class="middle-line common"></span>
-                <span class="bottom-line common"></span>
-              </button>
+        <button class="mobile-nav-toggle"
+                aria-controls="prime-nav" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <span class="top-line common"></span>
+            <span class="middle-line common"></span>
+            <span class="bottom-line common"></span>
+        </button>
 
-                <nav>
-                  <ul id="prime-nav" data-visible="false" class="prime-nav flex">
-                    <li>
-                      <a href="https://rejuvenationtech.com">Home</a>
-                    </li>
-                    <li>
-                      <a href="https://rejuvenationtech.com/Team/">About</a>
-                    </li>
-                    <li>
-                      <a href=""> <img src="assets/images/profile_icon.png" alt="Profile Icon" height="100%" width="15%"></a>
-                    </li>
-                  </nav>
+        <nav>
+            <ul id="prime-nav" data-visible="false" class="prime-nav flex">
+                <li>
+                    <a href="https://rejuvenationtech.com">Home</a>
+                </li>
+                <li>
+                    <a href="https://rejuvenationtech.com/Team/">About</a>
+                </li>
+                <li>
+                    <a href=""> <img src="assets/images/profile_icon.png" alt="Profile Icon" height="100%" width="15%"></a>
+                </li>
+            </ul>
+        </nav>
+    </Header>
+    <div class="navigation-adjustment">
+            <img class="BG" />
+            <div class="platform">
+                <div class="Sign-Up">
+                    <h1>Sign Up</h1>
                 </div>
-                </Header>
-                <div class="platform">
-            <div class="Sign-Up">
-                <h1>Sign Up</h1>
+
+                <p class="Stay-updated">Stay updated on your clinical trials</p>
+
+                <form class="form-container" method="post" action="TBD">
+                    <div class="form-input">
+                        <label>Organization Name</label>
+                        <input id="Organization Name" type="Organization Name" required>
+                    </div>
+                    <div class="form-input">
+                        <label>Contact Person's Name</label>
+                        <input id="Contact Person's Name" type="Contact Person's Name" / required>
+                    </div>
+                    <div class="form-input">
+                        <label>Address</label>
+                        <input id="Address" type="Address" required>
+                    </div>
+                    <div class="form-input">
+                        <label>State</label>
+                        <input id="State" type="State" required>
+                    </div>
+                    <div class="form-input">
+                        <label>Zip Code</label>
+                        <input id="Zip Code" type="Zip Code" required>
+                    </div>
+                    <div class="form-input">
+                        <label>Country</label>
+                        <input id="Country" type="Country" / required>
+                    </div>
+                    <div class="form-input">
+                        <label>Email</label>
+                        <input id="email" type="email" / required>
+                    </div>
+                    <div class="form-input">
+                        <label>Password</label>
+                        <input id="passwordBox" type="password" required />
+                        <p class="show" onclick="togglePassword()">show</p>
+                        <script>
+                            function togglePassword() {
+                                var x = document.getElementById("passwordBox");
+                                if (x.type === "password") {
+                                    x.type = "text";
+                                } else {
+                                    x.type = "password";
+                                }
+                            }
+                        </script>
+                    </div>
+                    <input type="submit" class="Create-account-button" value="Create Account" />
+                </form>
             </div>
-
-        <p class="Stay-updated">Stay updated on your clinical trials</p>
-
-            <form class="form-container" method="post" action="TBD">
-                <div class="form-input">
-                  <label>Organization Name</label>
-                  <input id="Organization Name" type="Organization Name" required>
-                </div>
-                <div class="form-input">
-                  <label>Contact Person's Name</label>
-                  <input id="Contact Person's Name" type="Contact Person's Name"/ required>
-                </div>
-                <div class="form-input">
-                    <label>Address</label>
-                   <input id="Address" type="Address" required>
-                  </div>
-                  <div class="form-input">
-                    <label>State</label>
-                   <input id="State" type="State" required>
-                  </div>
-                 <div class="form-input">
-                  <label>Zip Code</label>
-                 <input id="Zip Code" type="Zip Code" required>
-                </div>
-                 <div class="form-input">
-                   <label>Country</label>
-                   <input id="Country" type="Country"/ required>
-               </div>
-                <div class="form-input">
-                    <label>Email</label>
-                    <input id="email" type="email"/ required>
-                </div>
-                <div class="form-input">
-                    <label>Password</label>
-                    <input id="passwordBox" type="password" required/>
-                    <p class="show" onclick="togglePassword()">show</p>
-                    <script>
-                    function togglePassword() {
-                      var x = document.getElementById("passwordBox");
-                      if (x.type === "password") {
-                        x.type = "text";
-                      } else {
-                        x.type = "password";
-                      }
-                    }
-                    </script>
-                </div>
-                <input type="submit" class="Create-account-button" value="Create Account"/>
-            </form>
-          </div>
         </div>
     </div>
     <!-- End Document

@@ -250,7 +250,14 @@ content:url(assets/images/background.jpg)
   position: relative;
 }
 /*rectangle*/
-
+.navigation-adjustment {
+    position: absolute;
+    left: 0;
+    top: 139px;
+    height: calc(100% - 139px);
+    width: 100%;
+    overflow-y: auto
+}
 .platform {
   position: absolute;
   content: "";
