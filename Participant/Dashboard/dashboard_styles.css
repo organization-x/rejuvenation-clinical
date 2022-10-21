@@ -184,6 +184,14 @@ head {
     height: 100%;
     content: url(assets/images/background.jpg);
 }
+.navigation-adjustment {
+    position: absolute;
+    left: 0;
+    top: 139px;
+    height: calc(100% - 139px);
+    width: 100%;
+    overflow-y: auto
+}
 .search-bar {
     position: absolute;
     top: 5%;
@@ -197,7 +205,6 @@ head {
     padding: 0px 10px 0px 65px;
     z-index: 12;
     width: 1300px;
-    top: 200%;
     height: 60px;
     border-radius: 40px;
     border-color: transparent;
@@ -210,7 +217,7 @@ input:focus, textarea:focus, select:focus {
 }
 .search-icon {
     position: absolute;
-    top: 220%;
+    top: 20%;
     left: 0;
     z-index: 15;
     margin-left: 15px;
@@ -225,7 +232,7 @@ input:focus, textarea:focus, select:focus {
     flex-wrap:wrap;
     width:1500px;
     height:fit-content;
-    top:28%;
+    top:15%;
     left:50%;
     margin-left:-655px;
     overflow-y:auto;

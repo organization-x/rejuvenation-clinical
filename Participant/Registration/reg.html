@@ -2,30 +2,30 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs !-->
-  <meta charset="utf-8">
-  <title>Registration</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Basic Page Needs !-->
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
-  <!-- Bootstrap
-  -------------------------------------------------- -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
+    <!-- Bootstrap
+    -------------------------------------------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="reg.css">
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="reg.css">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="assets/images/temp_icon.png">
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="assets/images/temp_icon.png">
 
 </head>
 <body>
@@ -33,87 +33,84 @@
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div content="height=device-height, width=device-width, justify-content=center">
-        <img class="BG" />
-        </div>
-            <Header class="prime-header flex">
-              <div>
+        <Header class="prime-header flex">
+            <div>
                 <img src="assets/images/rejuvenation_tech_logo_words.png" alt="logo" class="logo">
-              </div>
+            </div>
 
-                <button class="mobile-nav-toggle"
-                aria-controls="prime-nav" aria-expanded="flase">
+            <button class="mobile-nav-toggle"
+                    aria-controls="prime-nav" aria-expanded="false">
                 <span class="sr-only">Menu</span>
                 <span class="top-line common"></span>
                 <span class="middle-line common"></span>
                 <span class="bottom-line common"></span>
-              </button>
+            </button>
 
-                <nav>
-                  <ul id="prime-nav" data-visible="false" class="prime-nav flex">
+            <nav>
+                <ul id="prime-nav" data-visible="false" class="prime-nav flex">
                     <li>
-                      <a href="https://rejuvenationtech.com">Home</a>
+                        <a href="https://rejuvenationtech.com">Home</a>
                     </li>
                     <li>
-                      <a href="https://rejuvenationtech.com/Team/">About</a>
+                        <a href="https://rejuvenationtech.com/Team/">About</a>
                     </li>
                     <li>
-                      <a href=""> <img src="assets/images/profile_icon.png" alt="Profile Icon" height="100%" width="15%"></a>
+                        <a href=""> <img src="assets/images/profile_icon.png" alt="Profile Icon" height="100%" width="15%"></a>
                     </li>
-                  </nav>
+                </ul>
+            </nav>
+        </Header>
+        <div class="navigation-adjustment">
+            <img class="BG" />
+            <div class="platform">
+                <div class="Sign-Up">
+                    <h1>Sign Up</h1>
                 </div>
-                </Header>
-                <div class="platform">
-            <div class="Sign-Up">
-                <h1>Sign Up</h1>
+
+                <p class="Stay-updated">Stay updated on your clinical trials</p>
+
+                <form class="form-container" method="post" action="TBD">
+                    <div class="form-input">
+                        <label>First Name</label>
+                        <input id="name" type="first name" required>
+                    </div>
+                    <div class="form-input">
+                        <label>Last Name</label>
+                        <input id="name" type="last name" / required>
+                    </div>
+                    <div class="form-input">
+                        <label>Date of Birth</label>
+                        <input id="Date of Birth" type="Date of Birth" required>
+                    </div>
+                    <div class="form-input">
+                        <label>Country</label>
+                        <input id="Country" type="Country" / required>
+                    </div>
+                    <div class="form-input">
+                        <label>Email</label>
+                        <input id="email" type="email" / required>
+                    </div>
+                    <div class="form-input">
+                        <label>Password</label>
+                        <input id="passwordBox" type="password" required />
+                        <p class="show" onclick="togglePassword()">show</p>
+                        <script>
+                            function togglePassword() {
+                                var x = document.getElementById("passwordBox");
+                                if (x.type === "password") {
+                                    x.type = "text";
+                                } else {
+                                    x.type = "password";
+                                }
+                            }
+                        </script>
+                    </div>
+                    <input type="submit" class="Create-account-button" value="Create Account" />
+                </form>
             </div>
-
-        <p class="Stay-updated">Stay updated on your clinical trials</p>
-
-            <form class="form-container" method="post" action="TBD">
-                <div class="form-input">
-                  <label>First Name</label>
-                  <input id="name" type="first name" required>
-                </div>
-                <div class="form-input">
-                  <label>Last Name</label>
-                  <input id="name" type="last name"/ required>
-                </div>
-                 <div class="form-input">
-                  <label>Date of Birth</label>
-                 <input id="Date of Birth" type="Date of Birth" required>
-                </div>
-                 <div class="form-input">
-                   <label>Country</label>
-                   <input id="Country" type="Country"/ required>
-               </div>
-                <div class="form-input">
-                    <label>Email</label>
-                    <input id="email" type="email"/ required>
-                </div>
-                <div class="form-input">
-                    <label>Password</label>
-                    <input id="passwordBox" type="password" required/>
-                    <p class="show" onclick="togglePassword()">show</p>
-                    <script>
-                    function togglePassword() {
-                      var x = document.getElementById("passwordBox");
-                      if (x.type === "password") {
-                        x.type = "text";
-                      } else {
-                        x.type = "password";
-                      }
-                    }
-                    </script>
-                </div>
-                <input type="submit" class="Create-account-button" value="Create Account"/>
-            </form>
-          </div>
         </div>
     </div>
     <!-- End Document
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
-
-    </body>
-  </html>

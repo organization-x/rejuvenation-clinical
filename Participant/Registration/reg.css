@@ -181,7 +181,14 @@ width:100%;
 height:100%;
 content:url(assets/images/background.png)
 }
-
+.navigation-adjustment {
+    position: absolute;
+    left: 0;
+    top: 139px;
+    height: calc(100% - 139px);
+    width: 100%;
+    overflow-y: auto
+}
 /*form*/
 .form-container{
   position:absolute;

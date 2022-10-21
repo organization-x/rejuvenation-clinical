@@ -38,75 +38,104 @@
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div content="height=device-height, width=device-width, justify-content=center">
-        <img class="BG" />
-        <h1 class="page-name">*Organization Name*</h1>
-        <!--List of all ongoing trials-->
-        <div class="content">
-            <div class="information">
-                <h3 class="header">
-                    Organization Info
-                    <button class="edit-button">
-                        <img class="edit-img" src="assets/images/editable_icon.png" />
-                    </button>
-                </h3>
-                <div class="info-form">
-                    <div class="full-box">
-                        <label class="indicator">Organization Name</label>
-                        <input class="info-box">
+        <Header class="prime-header flex">
+            <div>
+                <img src="assets/images/rejuvenation_tech_logo_words.png" alt="logo" class="logo">
+            </div>
+
+            <button class="mobile-nav-toggle"
+                    aria-controls="prime-nav" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <span class="top-line common"></span>
+                <span class="middle-line common"></span>
+                <span class="bottom-line common"></span>
+            </button>
+
+            <nav>
+                <ul id="prime-nav" data-visible="false" class="prime-nav flex">
+                    <li>
+                        <a href="https://rejuvenationtech.com">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://rejuvenationtech.com/Team/">About</a>
+                    </li>
+                    <li>
+                        <a href=""> <img src="assets/images/profile_icon.png" alt="Profile Icon" height="100%" width="15%"></a>
+                    </li>
+                </ul>
+            </nav>
+        </Header>
+        <div class="navigation-adjustment">
+            <img class="BG" />
+            <h1 class="page-name">*Organization Name*</h1>
+            <!--List of all ongoing trials-->
+            <div class="content">
+                <div class="information">
+                    <h3 class="header">
+                        Organization Info
+                        <button class="edit-button">
+                            <img class="edit-img" src="assets/images/editable_icon.png" />
+                        </button>
+                    </h3>
+                    <div class="info-form">
+                        <div class="full-box">
+                            <label class="indicator">Organization Name</label>
+                            <input class="info-box">
+                        </div>
+                        <div class="full-box">
+                            <label class="indicator">Address</label>
+                            <input class="info-box">
+                        </div>
+                        <div class="full-box">
+                            <label class="indicator">Country</label>
+                            <input class="info-box">
+                        </div>
+                        <div class="half-box">
+                            <label class="indicator">State/Province</label>
+                            <input class="info-box">
+                        </div>
+                        <div class="half-box">
+                            <label class="indicator">Zip Code</label>
+                            <input class="info-box">
+                        </div>
                     </div>
-                    <div class="full-box">
-                        <label class="indicator">Address</label>
-                        <input class="info-box">
-                    </div>
-                    <div class="full-box">
-                        <label class="indicator">Country</label>
-                        <input class="info-box">
-                    </div>
-                    <div class="half-box">
-                        <label class="indicator">State/Province</label>
-                        <input class="info-box">
-                    </div>
-                    <div class="half-box">
-                        <label class="indicator">Zip Code</label>
-                        <input class="info-box">
+                </div>
+                <div class="trial-container">
+                    <h3 class="header">Your Active Trials</h3>
+                    <div class="trial-display">
+                        <div class="trial-box">
+                            <h1>Trial Name</h1>
+                            <h4>Lab name</h4>
+                            <br>
+                            <h5>MM/DD/YYYY - MM/DD/YYYY</h5>
+                            <br>
+                            <p>
+                                Short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Est ante in nibh mauris cursus.
+                            </p>
+                            <p1>
+                                Eligibility. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Est ante in nibh mauris cursus.
+                            </p1>
+                            <div class="key-term-1">
+                                <p>Key Term 1</p>
+                            </div>
+                            <div class="key-term-2">
+                                <p>Key Term 2</p>
+                            </div>
+                            <div class="to-edit">
+                                <p>Edit</p>
+                            </div>
+                            <div class="to-progress">
+                                <p>Progress</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="trial-container">
-                <h3 class="header">Your Active Trials</h3>
-                <div class="trial-display">
-                    <div class="trial-box">
-                        <h1>Trial Name</h1>
-                        <h4>Lab name</h4>
-                        <br>
-                        <h5>MM/DD/YYYY - MM/DD/YYYY</h5>
-                        <br>
-                        <p>
-                            Short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Est ante in nibh mauris cursus.
-                        </p>
-                        <p1>
-                            Eligibility. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Est ante in nibh mauris cursus.
-                        </p1>
-                        <div class="key-term-1">
-                            <p>Key Term 1</p>
-                        </div>
-                        <div class="key-term-2">
-                            <p>Key Term 2</p>
-                        </div>
-                        <div class="to-edit">
-                            <p>Edit</p>
-                        </div>
-                        <div class="to-progress">
-                            <p>Progress</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-    <!-- End Document
+        <!-- End Document
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

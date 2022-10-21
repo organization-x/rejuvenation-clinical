@@ -184,18 +184,18 @@ content:url(assets/images/background.jpg)
 
 
 /*content*/
-.display{
-    position:absolute;
-    top:150px;
-    left:50%;
-    margin-left:-700px;
-    width:1400px;
-    height:calc(100% - 150px);
+.navigation-adjustment {
+    position: absolute;
+    left: 0;
+    top: 139px;
+    height: calc(100% - 139px);
+    width: 100%;
+    overflow-y: auto
 }
 .Rectangle-18{
   position:absolute;
   z-index:12;
-  right:0;
+  right:5%;
   top: 5%;
   width:640px;
   height:116px;
@@ -207,7 +207,7 @@ content:url(assets/images/background.jpg)
 .Rectangle-19{
   position:absolute;
   top:5%;
-  left:0;
+  left:5%;
   z-index:12;
   width:640px;
   height:116px;
@@ -252,8 +252,9 @@ content:url(assets/images/background.jpg)
 .Rectangle-20{
   position:absolute;
   top:30%;
+  left:50%;
   z-index:13;
-  margin-left:70px;
+  margin-left:-650px;
   width:1300px;
   height:325px;
   background-color:rgba(250, 251, 252, 1);
