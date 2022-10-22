@@ -1,9 +1,9 @@
 from django.db import models
-from .models import CustomUser
+from accounts.models import CustomUser
 import random
 # Create your models here.
 class Code(models.Model):
-    number = models.CharFiels(max_length = 5, blank = True)
+    number = models.CharField(max_length = 5, blank = True)
     user = models.OneToOneField(CustomUser, on_delete = models.CASCADE)
 
     def __str__(self):

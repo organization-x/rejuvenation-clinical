@@ -51,11 +51,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'codes'
-    'users'
-    #pip install django-crispy-forms
-    'crispy_forms'
     # my apps
     'pages',
     'accounts',
