@@ -30,35 +30,6 @@
     <link rel="icon" type="image/png" href="{% static 'images/temp_icon.png' %}">
 </head>
 <body>
-    <Header class="prime-header flex">
-        <div>
-            <img src="{% static 'images/rejuvenation_tech_logo.png' %}" alt="logo" class="logo">
-        </div>
-
-        <button class="mobile-nav-toggle"
-                aria-controls="prime-nav" aria-expanded="false">
-            <span class="sr-only">Menu</span>
-            <span class="top-line common"></span>
-            <span class="middle-line common"></span>
-            <span class="bottom-line common"></span>
-        </button>
-
-        <nav>
-            <ul id="prime-nav" data-visible="false" class="prime-nav flex">
-                <li>
-                    <a href="https://rejuvenationtech.com">Home</a>
-                </li>
-                <li>
-                    <a href="https://rejuvenationtech.com/Team/">About</a>
-                </li>
-                <li>
-                    <a href=""> <img src="{% static 'images/profile_icon.png' %}" alt="Profile Icon" height="100%" width="15%"></a>
-                </li>
-            </ul>
-        </nav>
-    </Header>
-
-
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div content="height=device-height, width=device-width, justify-content=center">
@@ -115,6 +86,33 @@
             </div>
         </div>
     </div>
+    <Header class="prime-header flex">
+        <div>
+            <img src="{% static 'images/rejuvenation_tech_logo.png' %}" alt="logo" class="logo">
+        </div>
+
+        <button class="mobile-nav-toggle"
+                aria-controls="prime-nav" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <span class="top-line common"></span>
+            <span class="middle-line common"></span>
+            <span class="bottom-line common"></span>
+        </button>
+
+        <nav>
+            <ul id="prime-nav" data-visible="false" class="prime-nav flex">
+                <li>
+                    <a href="https://rejuvenationtech.com">Home</a>
+                </li>
+                <li>
+                    <a href="https://rejuvenationtech.com/Team/">About</a>
+                </li>
+                <li>
+                    <a href=""> <img src="{% static 'images/profile_icon.png' %}" alt="Profile Icon" height="100%" width="15%"></a>
+                </li>
+            </ul>
+        </nav>
+    </Header>
     <!-- End Document
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
