@@ -141,8 +141,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'media'),
 ]
 
-STATIC_URL = '/static/'
-MEDIA_URL = '/media/'
+STATIC_URL = 'static/'
+MEDIA_URL = 'media/'
 
 # SET THESE TO PROPER RAILWAY / AWS STATIC SERVING DIRECTORY 
 # (reference min 6:00: https://www.youtube.com/watch?v=FrHnjoTqlIY)

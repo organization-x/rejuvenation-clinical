@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,11 +22,11 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="reg.css">
+  <link rel="stylesheet" href="/static/css/reg.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="assets/images/temp_icon.png">
+  <link rel="icon" type="image/png" href="{% static 'images/temp_icon.png' %}">
 
 </head>
 <body>
@@ -33,11 +34,11 @@
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div content="height=device-height, width=device-width, justify-content=center">
-        <img class="BG" />
+        <img class="BG" src="{% static 'images/background.png' %}"/>
         </div>
             <Header class="prime-header flex">
               <div>
-                <img src="assets/images/rejuvenation_tech_logo_words.png" alt="logo" class="logo">
+                <img src="{% static 'images/rejuvenation_tech_logo.png' %}" alt="logo" class="logo">
               </div>
 
                 <button class="mobile-nav-toggle"
@@ -57,7 +58,7 @@
                       <a href="https://rejuvenationtech.com/Team/">About</a>
                     </li>
                     <li>
-                      <a href=""> <img src="assets/images/profile_icon.png" alt="Profile Icon" height="100%" width="15%"></a>
+                      <a href=""> <img src="{% static 'images/profile_icon.png' %}" alt="Profile Icon" height="100%" width="15%"></a>
                     </li>
                   </nav>
                 </div>
@@ -104,10 +105,6 @@
                       }
                     }
                     </script>
-                </div>
-                <div class="form-input">
-                    <label>Medical Documents</label>
-                    <input type="file" id="medicalDocuments" name="filename" accept=".pdf" required>
                 </div>
                 <input type="submit" class="Create-account-button" value="Create Account"/>
             </form>
