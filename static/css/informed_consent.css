@@ -1,10 +1,10 @@
 @font-face{
     font-family: "Inter-semibold";
-    src: url('assets/Font/static/Inter-SemiBold.ttf') format('truetype');
+    src: url('../fonts/Inter-SemiBold.ttf') format('truetype');
 }
 @font-face {
     font-family: "Inter";
-    src: url('assets/Font/static/Inter-Regular.ttf') format('truetype');
+    src: url('../fonts/Inter-Regular.ttf') format('truetype');
 }
 
 /*basic set up*/
@@ -181,11 +181,10 @@ a:hover::after {
 
 .BG{
   position:fixed;
-  z-index:1;
+  z-index:-1;
   width:100%;
   height:100%;
-  content:url(assets/images/background.jpg)
-}
+  }
 
 .platform{
     position:absolute;

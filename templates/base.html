@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   {% load static %}
+  
 
   <!-- Basic Page Needs !-->
   <meta charset="utf-8">
@@ -22,7 +23,7 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  {% block head %} <link rel="stylesheet" href="/static/css/base.css"> {% endblock head %}
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

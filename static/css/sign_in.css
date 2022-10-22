@@ -17,7 +17,7 @@
 }
 @font-face{
   font-family: "Inter";
-  src: url('assets/Font/static/Inter-SemiBold.ttf') format('truetype');
+  src: url("../fonts/Inter-Regular.ttf") format('truetype');
 }
 /*nav*/
 .flex {
@@ -178,7 +178,6 @@ head {
   z-index:1;
   width:100%;
   height:100%;
-  content:url(assets/images/background.jpg)
 }
 .platform {
     position: absolute;

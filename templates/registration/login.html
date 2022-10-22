@@ -1,19 +1,20 @@
 {% extends 'base.html' %}
-{%load static%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 <!-- templates/registration/login.html -->
-<head>
-  <link rel="stylesheet" href="/static/css/sign_in.css">
-</head>
+{% block head %} <link rel="stylesheet" href="/static/css/sign_in.css"> {% endblock head %}
 
 
 
 {% block title %}Login{% endblock %}
-  
-{% block content %}
+<body>
+  {% block content %}
 
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div content="height=device-height, width=device-width, justify-content=center">
+      <img class="BG" src="{% static 'images/background.png' %}"/>
       <div class="gradient">
       </div>
 
@@ -59,3 +60,5 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 {% endblock %}
+  
+</body>  
