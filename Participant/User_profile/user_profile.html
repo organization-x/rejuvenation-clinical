@@ -67,20 +67,65 @@
         </Header>
         <div class="navigation-adjustment">
             <img class="BG" />
-            <h1 class="company-name">Profile</h1>
+            <h1 class="heading">Profile</h1>
             <!--List of all ongoing trials-->
             <div class="information">
                 <div class="current-trials">
-                    <h3 class="header">Current Trials</h3>
                     <div class="trial-list">
-                        <button class="trial">Company Name</button>
-                        <button class="trial">Also Company name</button>
+                        <h3 class="header">Current Trials</h3>
+                        <div class="trial-box">
+                            <h1>Trial Name</h1>
+                            <h4>Lab name</h4>
+                            <br>
+                            <h5>MM/DD/YYYY - MM/DD/YYYY</h5>
+                            <br>
+                            <div class="key-term-1">
+                                <p>Key Term 1</p>
+                            </div>
+                            <div class="key-term-2">
+                                <p>Key Term 2</p>
+                            </div>
+                            <button class="go-button">Go To</button>
+                        </div>
+                        <div class="trial-box">
+                            <h1>Trial Name</h1>
+                            <h4>Lab name</h4>
+                            <br>
+                            <h5>MM/DD/YYYY - MM/DD/YYYY</h5>
+                            <br>
+                            <div class="key-term-1">
+                                <p>Key Term 1</p>
+                            </div>
+                            <div class="key-term-2">
+                                <p>Key Term 2</p>
+                            </div>
+                            <button class="go-button">Go To</button>
+                        </div>
+                        <!-- separating current from pending trials -->
+                        <div class="separator"></div>
+                        <h3 class="header">Pending Trials</h3>
+                        <div class="trial-box">
+                            <h1>Trial Name</h1>
+                            <h4>Lab name</h4>
+                            <br>
+                            <h5>MM/DD/YYYY - MM/DD/YYYY</h5>
+                            <br>
+                            <div class="key-term-1">
+                                <p>Key Term 1</p>
+                            </div>
+                            <div class="key-term-2">
+                                <p>Key Term 2</p>
+                            </div>
+                            <button class="go-button">Go To</button>
+                        </div>
+                        <button class="add-trial">+ Add a New Trial</button>
                     </div>
                 </div>
                 <div class="trial-history">
                     <h3 class="header">Trial History</h3>
                     <canvas id="tempChart" class="history-chart"></canvas>
                     <script>
+                        //Graph plot point values (data values)
                         var xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
                         var yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
 
@@ -90,6 +135,7 @@
                                 labels: xValues,
                                 datasets: [{
                                     fill: false,
+                                    //Styles the graph
                                     backgroundColor: "rgba(0,0,255,1.0)",
                                     borderColor: "rgba(0,0,255,0.2)",
                                     data: yValues
@@ -98,6 +144,7 @@
                             options: {
                                 legend: { display: false },
                                 scales: {
+                                    //Defines tick rate of the graph
                                     yAxes: [{ ticks: { min: 6, max: 16 } }],
                                 }
                             }
