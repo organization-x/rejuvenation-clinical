@@ -271,3 +271,7 @@ button:focus{
     overflow: auto;
     margin-left:18%;
 }
+p {
+  margin-left: 10px;
+  font-size: 24px;
+}
