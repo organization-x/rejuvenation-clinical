@@ -2,31 +2,35 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Trial Dashboard</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Trial Dashboard</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
-  <!-- Bootstrap
-  -------------------------------------------------- -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
+    <!-- Bootstrap
+    -------------------------------------------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="single_trial_styles.css">
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="single_trial_styles.css">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="assets/images/temp_icon.png">
+    <!--Javascript
+    ----------------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="assets/images/temp_icon.png">
 </head>
 <body>
       <Header class="prime-header flex">
@@ -77,13 +81,37 @@
                     </form>
                 </div>
                 <div class="quarter-box">
+                    <h1>Trial Info</h1>
+                </div>
+                <div class="quarter-box">
+                    <h1>Results</h1>
+                    <canvas id="tempChart" class="history-chart"></canvas>
+                    <script>
+                        var xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+                        var yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+                        new Chart("tempChart", {
+                            type: "line",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    fill: false,
+                                    backgroundColor: "rgba(0,0,255,1.0)",
+                                    borderColor: "rgba(0,0,255,0.2)",
+                                    data: yValues
+                                }]
+                            },
+                            options: {
+                                legend: { display: false },
+                                scales: {
+                                    yAxes: [{ ticks: { min: 6, max: 16 } }],
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+                <div class="quarter-box">
                     <h1>Company Info</h1>
-                </div>
-                <div class="quarter-box">
-                    <h1>Results?</h1>
-                </div>
-                <div class="quarter-box">
-                    <h1>Other?</h1>
                 </div>
             </div>
         </div>

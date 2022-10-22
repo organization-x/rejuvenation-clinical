@@ -263,3 +263,11 @@ button:focus{
     color:rgb(0,32,112);
     overflow:hidden
 }
+.history-chart {
+    position: relative;
+    z-index: 3;
+    max-height: 220px;
+    max-width: 392px;
+    overflow: auto;
+    margin-left:18%;
+}
