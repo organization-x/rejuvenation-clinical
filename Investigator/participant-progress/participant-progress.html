@@ -33,45 +33,50 @@
     <div content="height=device-height, width=device-width, justify-content=center">
         <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <img class="BG" />
+        <Header class="prime-header flex">
+            <div>
+                <img src="assets/images/rejuvenation_tech_logo_words.png" alt="logo" class="logo">
+            </div>
+
+            <button class="mobile-nav-toggle"
+                    aria-controls="prime-nav" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <span class="top-line common"></span>
+                <span class="middle-line common"></span>
+                <span class="bottom-line common"></span>
+            </button>
+
+            <nav>
+                <ul id="prime-nav" data-visible="false" class="prime-nav flex">
+                    <li>
+                        <a href="https://rejuvenationtech.com">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://rejuvenationtech.com/Team/">About</a>
+                    </li>
+                    <li>
+                        <a href=""> <img src="assets/images/profile_icon.png" alt="Profile Icon" height="100%" width="15%"></a>
+                    </li>
+                </ul>
+            </nav>
+        </Header>
         <div class="navigation-adjustment">
-            <div class="platform">
-                <h1 class="trial-name">Trial Name</h1>
-                <div class="participant-list">
-                    <button class="participant">Participant Name</button>
-                    <div class="progress">
-                        <div class="task-list">
-                            <div class="task">
-                                <input type="checkbox" checked="" />
-                                <p class="task-info">Completed task (no wrapping yet so has to be 1 line)</p>
-                            </div>
-                            <div class="task file-attached">
-                                <input type="checkbox" checked />
-                                <p class="task-info">Completed task with file attached</p>
-                            </div>
-                            <embed class="file-viewer" src="assets/images/blood-test.pdf" />
-                            <div class="task">
-                                <input type="checkbox" disabled />
-                                <p>Incomplete task</p>
-                            </div>
+            <div class="content">
+                <img class="BG" />
+                <div class="trial-info">
+                    <h1 class="trial-name">Trial Name</h1>
+                    <div class="platform">
+                        <h1 class="list-name">Pending participants</h1>
+                        <div class="participant-list">
+                            <button class="participant">Participant Name</button>
+                            <button class="participant">Participant Name</button>
                         </div>
                     </div>
-                    <button class="participant">Participant Name</button>
-                    <div class="progress">
-                        <div class="task-list">
-                            <div class="task">
-                                <input type="checkbox" checked />
-                                <p class="task-info">Completed task (no wrapping so has to be 1 line)</p>
-                            </div>
-                            <div class="task file-attached">
-                                <input type="checkbox" checked />
-                                <p class="task-info">Completed task with file attached</p>
-                            </div>
-                            <embed class="file-viewer" src="assets/images/blood-test.pdf" />
-                            <div class="task">
-                                <input type="checkbox" disabled />
-                                <p>Incomplete task</p>
-                            </div>
+                    <div class="platform">
+                        <h1 class="list-name">Current Participants</h1>
+                        <div class="participant-list">
+                            <button class="participant">Participant Name / 10-24-2022 / 10/25 tasks</button>
+                            <button class="participant">Participant Name / 09-17-2022 / 21/25 tasks</button>
                         </div>
                     </div>
                 </div>
@@ -80,37 +85,5 @@
     </div>
         <!-- End Document
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <script>
-            var coll = document.getElementsByClassName("participant");
-            var i;
-
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
-                });
-            }
-        </script>
-        <script>
-            var coll = document.getElementsByClassName("file-attached");
-            var i;
-
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
-                });
-            }
-        </script>
 </body>
 </html>
