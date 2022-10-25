@@ -177,6 +177,14 @@ head {
     overflow-x: hidden;
 }
 
+.navigation-adjustment {
+    position: absolute;
+    left: 0;
+    top: 139px;
+    height: calc(100% - 139px);
+    width: 100%;
+    overflow-y: auto
+}
 .BG{
   position:fixed;
   z-index:1;
@@ -186,7 +194,7 @@ head {
 }
 .content{
     position:absolute;
-    top:250px;
+    top:110px;
     left:50%;
     width:1100px;
     height:1000px;
@@ -390,6 +398,21 @@ head {
     color: rgba(255,255,255,1);
     text-align: center;
     line-height: 64px;
+}
+.create-trial {
+    position: relative;
+    margin: 20px 0 20px 225px;
+    height: 50px;
+    width: 220px;
+    line-height: 50px;
+    text-align: center;
+    font-family: Inter-semibold;
+    font-size: 24px;
+    color: rgb(100, 100, 100);
+    filter: drop-shadow(-1px 1px 5px rgba(0,0,0,0.1));
+    border: none;
+    background-color: white;
+    border-radius: 30px;
 }
 .profile-info {
     position: absolute;
