@@ -195,7 +195,7 @@ head {
     z-index: 14;
     margin-left: -229px;
     width: 458px;
-    height: 550px;
+    height: 510px;
     margin-top: -275px;
     background-color: rgba(250, 251, 252, 1);
     border-radius: 10px;
@@ -232,7 +232,7 @@ head {
 .form-container{
     position:absolute;
     left:50%;
-    top:35%;
+    top:40%;
     width:382px;
     height:430px;
     margin-left:-191px;
@@ -285,7 +285,7 @@ head {
 .Sign-in-button {
     position: absolute;
     left: 50%;
-    top: 90%;
+    top: 80%;
     z-index: 18;
     margin-left: -191px;
     width: 382px;
