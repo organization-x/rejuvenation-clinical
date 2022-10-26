@@ -15,7 +15,7 @@ from pathlib import Path
 # for environment variable management
 import os
 from dotenv import load_dotenv
-
+import .accounts
 # find and load the environment variables from .env file
 load_dotenv()
 
