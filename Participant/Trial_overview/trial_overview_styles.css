@@ -272,5 +272,29 @@ head {
     font-family:Inter;
     font-size:24px;
 }
+.task {
+    position: relative;
+    width: 660px;
+    height: auto;
+    margin-top: 10px;
+}
+
+    .task > input {
+        position: relative;
+        width: 24px;
+        height: 24px;
+    }
+
+    .task > p {
+        position: absolute;
+        left: 26px;
+        top: 0;
+        width: auto;
+        height: 30px;
+        font-size: 20px;
+        font-family: Inter;
+        color: rgb(0,32,112);
+        overflow: hidden
+    }
 
 
