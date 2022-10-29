@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Results</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
+
+    <!-- Bootstrap w/ js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="view_results_styles.css">
+
+    <!--Javascript
+    ----------------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="assets/images/temp_icon.png">
+
+</head>
+<body>
+    <div content="height=device-height, width=device-width, justify-content=center">
+        <!-- Primary Page Layout
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <Header class="prime-header flex">
+            <div>
+                <img src="assets/images/rejuvenation_tech_logo_words.png" alt="logo" class="logo">
+            </div>
+
+            <button class="mobile-nav-toggle"
+                    aria-controls="prime-nav" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <span class="top-line common"></span>
+                <span class="middle-line common"></span>
+                <span class="bottom-line common"></span>
+            </button>
+
+            <nav>
+                <ul id="prime-nav" data-visible="false" class="prime-nav flex">
+                    <li>
+                        <a href="https://rejuvenationtech.com">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://rejuvenationtech.com/Team/">About</a>
+                    </li>
+                    <li>
+                        <a href=""> <img src="assets/images/profile_icon.png" alt="Profile Icon" height="100%" width="15%"></a>
+                    </li>
+                </ul>
+            </nav>
+        </Header>
+        <div class="navigation-adjustment">
+            <div class="content">
+                <img class="BG" />
+                <div class="container">
+                    <div class="row justify-content-evenly">
+                        <h1 class="trial-name">Trial Name</h1>
+                    </div>
+                    <div class="row justify-content-evenly">
+                        <div class="col-5 bg-white info-box">
+                            <div class="row justify-content-evenly">
+                                <h1 class="box-label">X to Y</h1>
+                            </div>
+                            <div class="row justify-content-evenly">
+                                <canvas id="tempChart"></canvas>
+                                <script>
+                                    //Graph plot point values (data values)
+                                    var xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+                                    var yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+                                    new Chart("tempChart", {
+                                        type: "line",
+                                        data: {
+                                            labels: xValues,
+                                            datasets: [{
+                                                fill: false,
+                                                //Styles the graph
+                                                backgroundColor: "rgba(0,0,255,1.0)",
+                                                borderColor: "rgba(0,0,255,0.2)",
+                                                data: yValues
+                                            }]
+                                        },
+                                        options: {
+                                            legend: { display: false },
+                                            scales: {
+                                                //Defines tick rate of the graph
+                                                yAxes: [{ ticks: { min: 6, max: 16 } }],
+                                            }
+                                        }
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <div class="col-5 bg-white info-box">
+                            Nothing for now
+                        </div>
+                    </div>
+                    <div class="row justify-content-evenly" style="margin-top:40px;">
+                        <div class="col-12 bg-white info-box">
+                            <div class="row">
+                                <div class="col">
+                                    <h1 class="box-label">Table</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col table-box">1</div>
+                                <div class="col table-box">2</div>
+                                <div class="col table-box">3</div>
+                                <div class="col table-box">4</div>
+                                <div class="col table-box">5</div>
+                            </div>
+                            <div class="row">
+                                <div class="col table-box">6</div>
+                                <div class="col table-box">7</div>
+                                <div class="col table-box">8</div>
+                                <div class="col table-box">9</div>
+                                <div class="col table-box">10</div>
+                            </div>
+                            <div class="row">
+                                <div class="col table-box">11</div>
+                                <div class="col table-box">12</div>
+                                <div class="col table-box">13</div>
+                                <div class="col table-box">14</div>
+                                <div class="col table-box">15</div>
+                            </div>
+                            <div class="row">
+                                <div class="col table-box">16</div>
+                                <div class="col table-box">17</div>
+                                <div class="col table-box">18</div>
+                                <div class="col table-box">19</div>
+                                <div class="col table-box">20</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
