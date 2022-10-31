@@ -144,8 +144,9 @@ STATICFILES_DIRS = [
 STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 
-# SET THESE TO PROPER RAILWAY / AWS STATIC SERVING DIRECTORY 
+# SET THESE TO PROPER RAILWAY / AWS STATIC SERVING DIRECTORY
 # (reference min 6:00: https://www.youtube.com/watch?v=FrHnjoTqlIY)
+# or https://stackoverflow.com/questions/5016589/what-is-the-difference-between-static-files-and-media-files-in-django
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
 
