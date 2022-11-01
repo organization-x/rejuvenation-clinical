@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
+{% load static %}
+<!-- templates/registration/login.html -->
+{% block head %} <link rel="stylesheet" href="/static/css/user_profile_styles.css"> {% endblock head %}
 
 {% block content %}
-{% load static %}
-{% if user.is_authenticated %}
-
-  <!-- Primary Page Layout
+    <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div content="height=device-height, width=device-width, justify-content=center">
-        <img class="BG" />
+        <img class="BG" src="{% static 'images/background.png' %}"/>
         <h1 class="company-name">Profile</h1>
         <!--List of all ongoing trials-->
         <div class="information">
@@ -95,8 +95,4 @@
     <!-- End Document
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-{% else %}
-<!-- hacker way of redirecting if user is not logged in -->
-  <meta http-equiv="Refresh" content="0; url='{% url 'login' %}" />
-{% endif %}
-{% endblock content %}
+{% endblock %}

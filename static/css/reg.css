@@ -17,7 +17,7 @@
 }
 @font-face{
   font-family: "Inter";
-  src: url('../fonts/Inter-SemiBold.ttf') format('truetype');
+  src: url('../fonts/Inter-Regular.ttf') format('truetype');
 }
 /*nav*/
 .flex {
@@ -415,7 +415,7 @@ height:100%;
   box-sizing:border-box;
   border-radius:15px;
 }
-.Address{
+.Country{
   position:relative;
   z-index:33;
   pointer-events:none;
@@ -700,7 +700,7 @@ height:100%;
   margin-top:-350px;
   margin-bottom:333px;
   min-height:17px;
-  content:url(../images/Rectangle_4.png);
+  content:url(assets/images/Rectangle_4.png);
 }
 .Rectangle-5{
   position:relative;
@@ -712,7 +712,7 @@ height:100%;
   margin-top:-344px;
   margin-bottom:339px;
   min-height:5px;
-  content:url(../images/Rectangle_5.png);
+  content:url(assets/images/Rectangle_5.png);
 }
 
 /*show*/

@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.contrib.auth.models import AbstractUser
+from pyparsing import countedArray
 
 # create a new user
 # create a superuser
@@ -10,23 +11,27 @@ class CustomUser(AbstractUser):
 
 class CustomAccountManager(BaseUserManager):
 
-    def create_user(self, email, username, password=None):
+    def create_user(self, email, first_name, last_name, country, password=None):
         if not email:
             raise ValueError("Users must have an email address.")
-        if not username:
-            raise ValueError("Users must have a username.")
+        if not password:
+            raise ValueError("Users must have a password.")
+        if not first_name:
+            raise ValueError("Users must have a first name.")
+        if not last_name:
+            raise ValueError("Users must have a last name.")
+        if not country:
+            raise ValueError("Users must have a country.")
         user = self.model(
             email=self.normalize_email(email),
-            username=username,
         )
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, username, password):
+    def create_superuser(self, email, password):
         user = self.create_user(
             email=self.normalize_email(email),
-            username=username,
             password=password,
         )
         user.is_admin = True
@@ -40,7 +45,9 @@ class CustomAccountManager(BaseUserManager):
 class Account(AbstractBaseUser):
 
     email                   = models.EmailField(verbose_name="email", max_length=60, unique=True)
-    username                = models.CharField(max_length=30, unique=True)
+    first_name              = models.CharField(max_length=30)
+    last_name               = models.CharField(max_length=30)
+    country                 = models.CharField(max_length=50)
     date_joined             = models.DateTimeField(verbose_name="date joined", auto_now_add=True)
     last_login              = models.DateTimeField(verbose_name="last login", auto_now=True)
     is_admin                = models.BooleanField(default=False)
@@ -51,10 +58,10 @@ class Account(AbstractBaseUser):
     objects = CustomAccountManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username']
+    REQUIRED_FIELDS = ['first_name', 'last_name', 'birthdate', 'country']
 
     def __str__(self):
-        return self.username
+        return self.email
 
     def has_perm(self, perm, obj=None):
         return self.is_admin

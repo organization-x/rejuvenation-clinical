@@ -1,14 +1,69 @@
-<!-- templates/registration/signup.html -->
 {% extends "base.html" %}
+{% load static %}
+<!-- templates/registration/login.html -->
+{% block head %} <link rel="stylesheet" href="/static/css/reg.css"> {% endblock head %}
 
-{% block title %}Sign Up{% endblock %}
 
 {% block content %}
 
-  <h2>Sign up</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Sign Up</button>
-  </form>
+  <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div content="height=device-height, width=device-width, justify-content=center">
+      <img class="BG" src="{% static 'images/background.png' %}"/>
+      </div>
+          <Header class="prime-header flex">
+            <div>
+              </Header>
+              <div class="platform">
+          <div class="Sign-Up">
+              <h1>Sign Up</h1>
+          </div>
+
+      <p class="Stay-updated">Stay updated on your clinical trials</p>
+
+          <form class="form-container" method="post">
+            <div class="form-input">
+              <label>First Name</label>
+              <input id="name" type="first name" required>
+          </div>
+          <div class="form-input">
+              <label>Last Name</label>
+              <input id="name" type="last name" / required>
+          </div>
+          <div class="form-input">
+              <label>Date of Birth</label>
+              <input id="Date of Birth" type="Date of Birth" required>
+          </div>
+          <div class="form-input">
+              <label>Country</label>
+              <input id="Country" type="Country" / required>
+          </div>
+          <div class="form-input">
+              <label>Email</label>
+              <input id="email" type="email" / required>
+          </div>
+          <div class="form-input">
+              <label>Password</label>
+              <input id="passwordBox" type="password" required />
+              <p class="show" onclick="togglePassword()">show</p>
+              <script>
+                  function togglePassword() {
+                      var x = document.getElementById("passwordBox");
+                      if (x.type === "password") {
+                          x.type = "text";
+                      } else {
+                          x.type = "password";
+                      }
+                  }
+              </script>
+          </div>
+              {% csrf_token %}
+              {{ form.as_p }}
+              <input type="submit" class="Create-account-button" value="Create Account"/>
+          </form>
+        </div>
+      </div>
+  </div>
+  <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 {% endblock %}
