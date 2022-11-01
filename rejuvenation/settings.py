@@ -15,7 +15,6 @@ from pathlib import Path
 # for environment variable management
 import os
 from dotenv import load_dotenv
-
 # find and load the environment variables from .env file
 load_dotenv()
 
@@ -51,11 +50,30 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admindocs',
+
+    'django_otp',
+    'django_otp.plugins.otp_totp',
+    'django_otp.plugins.otp_hotp',
+    'django_otp.plugins.otp_static',
+
+    # Required by allauth.
+    'django.contrib.sites',
+
+    # Enable allauth.
+    'allauth',
+    'allauth.account',
+
+
+    # Enable two-factor auth.
+    'allauth_2fa',
     # my apps
     'pages',
     'accounts',
 ]
-
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+LOGIN_URL = '/login/'
+AUTH_USER_MODEL = 'accounts.CustomUser'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -64,6 +82,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+
+
+    # Reset login flow middleware. If this middleware is included, the login
+    # flow is reset if another page is loaded between login and successfully
+    # entering two-factor credentials.
+    'allauth_2fa.middleware.AllauthTwoFactorMiddleware',
 ]
 
 ROOT_URLCONF = 'rejuvenation.urls'
@@ -159,3 +184,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = "home"
 # successful logout redirect url
 LOGOUT_REDIRECT_URL = "home"
+
+LOGIN_URL = 'two_factor:login'
+
+

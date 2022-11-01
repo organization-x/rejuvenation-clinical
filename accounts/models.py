@@ -1,8 +1,12 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+from django.contrib.auth.models import AbstractUser
 
 # create a new user
 # create a superuser
+# creates a custom user to get the sms 2fa ready:
+class CustomUser(AbstractUser):
+    phone_number = models.CharField(max_length = 12)
 
 class CustomAccountManager(BaseUserManager):
 
