@@ -19,7 +19,7 @@ class SignUpView(generic.CreateView):
 
 @login_required
 def home_view(request):
-    return render(request, 'main.html', {})
+    return render(request, 'base.html', {})
 
 def auth_view(request):
     form = AuthenticationForm()
