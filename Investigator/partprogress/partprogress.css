@@ -280,14 +280,16 @@ p {
     z-index: 3;
     top: 10%;
     left: 0%;
-    margin-left: 50%;
-    width: 1300px;
-    height: 600px;
-    background-color: rgb(255,255,255);
+    /* margin-left: 50%; */
+    width: 594px;
+    height: 320px;
+    /* background-color: rgb(255,255,255); */
     color: rgb(0,0,0);
-    overflow-y: scroll;
-    margin-left: 50px;
+    overflow-y: auto;
+    overflow-x:hidden;
+    /* margin-left: 50px; */
     border-radius: 10px;
+    margin-top:5px;
 }
 
     .terms > p {
@@ -295,23 +297,19 @@ p {
         font-size: 20px;
         font-family: Inter;
     }
-.collapsible {
+.toggle-collapse {
     background-color: #eee;
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 570px;
     border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .active, .collapsible:hover {
     background-color: #CCC;
-}
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
 }
