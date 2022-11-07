@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+
+  <!-- Basic Page Needs !-->
+  <meta charset="utf-8">
+  <title>Rejuvenation Tech Clinical Trials</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, height=device-height">
+  <!-- Bootstrap
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="{% static 'customcss/css/base.css' %}">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="{% static 'images/temp_icon.png' %}">
+
+</head>
+
+<body>
+  <!-- header -->
+    {% include 'snippets/header.html' %}
+    {% include 'snippets/base_css.html' %}
+    {% include 'snippets/base_js.html' %}
+
+  <!-- body -->
+  <main>
+    <img class="BG" alt="background"/>
+    {% block content %}
+
+    {% endblock content %}
+  </main>
+
+</body>
+</html>

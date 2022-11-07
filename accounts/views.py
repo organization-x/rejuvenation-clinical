@@ -8,7 +8,7 @@ from .forms import AccountForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login
 from .forms import CodeForm
-from pages.models import CustomUser
+from pages.models import Account
 from .utils import send_sms
 from django.shortcuts import redirect
 # Create your views here.
@@ -37,7 +37,7 @@ def verify_view(request):
     form = CodeForm(request.POST or None)
     pk = request.session.get('pk')
     if pk:
-        user = CustomUser.objects.get(pk = pk)
+        user = Account.objects.get(pk = pk)
         code = user.code
         code_user = f"{user.username}: {user.code}"
         if not request.POST:

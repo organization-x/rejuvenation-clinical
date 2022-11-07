@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path, include
-from two_factor.urls import urlpatterns as tf_urls
+from pages.urls import urlpatterns as tf_urls
 from accounts.views import home_view, auth_view, verify_view
 
 from pages.views import (

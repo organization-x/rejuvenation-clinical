@@ -73,7 +73,7 @@ INSTALLED_APPS = [
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_URL = '/login/'
-AUTH_USER_MODEL = 'accounts.CustomUser'
+AUTH_USER_MODEL = 'accounts.Account'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -166,8 +166,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'media'),
 ]
 
-STATIC_URL = 'static/'
-MEDIA_URL = 'media/'
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
 
 # SET THESE TO PROPER RAILWAY / AWS STATIC SERVING DIRECTORY
 # (reference min 6:00: https://www.youtube.com/watch?v=FrHnjoTqlIY)
@@ -185,6 +185,6 @@ LOGIN_REDIRECT_URL = "home"
 # successful logout redirect url
 LOGOUT_REDIRECT_URL = "home"
 
-LOGIN_URL = 'two_factor:login'
+LOGIN_URL = 'login-view'
 
 
