@@ -242,8 +242,6 @@ head {
     border-radius: 10px;
     filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.3));
     border-radius: 10px;
-    border-width:2px;
-    border:solid;
 }
 .header{
     color:rgb(0,32,112);
@@ -264,12 +262,14 @@ head {
     z-index: 27;
     width: 640px;
     height: 170px;
-    background-color: rgba(217, 217, 217, 1);
+    background-color: rgba(250, 251, 252, 1);
+    filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.3));
     border-radius: 15px;
 }
 
     .trial-box > h1 {
         position: absolute;
+        color: rgb(0,32,112);
         top: 5%;
         left: 3%;
         font-family: Inter-semibold;
@@ -343,8 +343,6 @@ head {
     width:inherit;
     height:1px;
     border:dashed;
-    border-width:3px;
-    border-color:rgb(0,32,112);
     margin:20px;
 }
 .add-trial {
@@ -371,9 +369,6 @@ head {
     overflow: hidden;
     background-color: white;
     border-radius: 10px;
-    border-width: 2px;
-    border: solid;
-    border-color: rgb(0,32,112);
 }
 .info-form{
     position:absolute;
@@ -428,9 +423,6 @@ head {
     overflow: hidden;
     background-color: white;
     border-radius: 10px;
-    border-width: 2px;
-    border: solid;
-    border-color: rgb(0,32,112);
 }
 .history-chart{
     position:absolute;
