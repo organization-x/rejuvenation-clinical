@@ -220,7 +220,9 @@ head {
     height:750px;
     margin-left:-450px;
     border-radius:10px;
-    background-color:rgb(255,255,255);
+    background-color: rgba(250, 251, 252, 1);
+    border-radius: 10px;
+    filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.3));
 }
 .platform > h1{
     position:relative;
@@ -236,11 +238,10 @@ head {
     width: 670px;
     height: 500px;
     overflow:hidden;
-    background-color: white;
+    background-color: rgba(250, 251, 252, 1);
     border-radius: 10px;
-    border-width:2px;
-    border:solid;
-    border-color:rgb(0,32,112);
+    filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.3));
+    border-radius: 10px;
 }
 .header{
     color:rgb(0,32,112);
@@ -261,12 +262,16 @@ head {
     z-index: 27;
     width: 640px;
     height: 170px;
-    background-color: rgba(217, 217, 217, 1);
+    border-color: gray;
+    border-width: 5px;
+    background-color: rgba(250, 251, 252, 1);
+    filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.3));
     border-radius: 15px;
 }
 
     .trial-box > h1 {
         position: absolute;
+        color: rgb(0,32,112);
         top: 5%;
         left: 3%;
         font-family: Inter-semibold;
@@ -311,7 +316,7 @@ head {
     height: 64px;
     background-color: rgba(75, 107, 188, 1);
     border: 1px solid rgba(167, 167, 167, 0.51);
-    border-radius: 40px;
+    border-radius: 20px;
     font-family: Inter-semibold;
     font-size: 24px;
     color: rgba(255,255,255,1);
@@ -328,7 +333,7 @@ head {
     height: 64px;
     background-color: rgba(75, 107, 188, 1);
     border: 1px solid rgba(167, 167, 167, 0.51);
-    border-radius: 40px;
+    border-radius: 20px;
     font-family: Inter-semibold;
     font-size: 24px;
     color: rgba(255,255,255,1);
@@ -340,8 +345,6 @@ head {
     width:inherit;
     height:1px;
     border:dashed;
-    border-width:3px;
-    border-color:rgb(0,32,112);
     margin:20px;
 }
 .add-trial {
@@ -356,7 +359,7 @@ head {
     color: rgb(100, 100, 100);
     filter: drop-shadow(-1px 1px 5px rgba(0,0,0,0.1));
     border: none;
-    background-color:white;
+    background-color: rgba(250, 251, 252, 1);
     border-radius:30px;
 }
 .profile-info {
@@ -366,11 +369,9 @@ head {
     height:820px;
     z-index: 2;
     overflow: hidden;
-    background-color: white;
+    filter: drop-shadow(-1px 1px 5px rgba(0,0,0,0.1));
+    background-color: rgba(250, 251, 252, 1);
     border-radius: 10px;
-    border-width: 2px;
-    border: solid;
-    border-color: rgb(0,32,112);
 }
 .info-form{
     position:absolute;
@@ -423,11 +424,9 @@ head {
     width: 400px;
     height: 300px;
     overflow: hidden;
-    background-color: white;
+    background-color: rgba(250, 251, 252, 1);
+    filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.3));
     border-radius: 10px;
-    border-width: 2px;
-    border: solid;
-    border-color: rgb(0,32,112);
 }
 .history-chart{
     position:absolute;
