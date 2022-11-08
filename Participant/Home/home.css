@@ -224,7 +224,7 @@ content:url(assets/images/background.jpg)
   margin-top:-25px;
   width:450px;
   text-align:left;
-  color:rgba(0, 0, 0, 1);
+  color:rgb(0,32,112);
   font-style:normal;
   font-family:Inter;
   font-size:40px;
@@ -241,7 +241,7 @@ content:url(assets/images/background.jpg)
   width:450px;
   height:50px;
   text-align:left;
-  color:rgba(0, 0, 0, 1);
+  color:rgb(0,32,112);
   font-style:normal;
   font-family:Inter;
   font-weight:400;
@@ -270,7 +270,7 @@ content:url(assets/images/background.jpg)
   z-index: 14;
   width:632px;
   text-align:left;
-  color:rgba(0, 0, 0, 1);
+  color:rgb(0,32,112);
   font-style:normal;
   font-family:Inter;
   font-size:40px;

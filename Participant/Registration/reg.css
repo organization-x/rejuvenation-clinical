@@ -266,7 +266,7 @@ content:url(assets/images/background.png)
   z-index: 14;
   margin-left: -229.415px;
   width: 599.79px;
-  height: 850px;
+  height: 780px;
   margin-top: -232.035px;
   background-color: rgba(250, 251, 252, 1);
   border-radius: 10px;
@@ -290,11 +290,12 @@ content:url(assets/images/background.png)
   position:absolute;
   left:50%;
   top:7%;
-  margin-left:-66px;
+  width: 200px;
+  margin-left:-100px;
   margin-top:-24px;
   z-index:20;
   text-align:center;
-  color:rgba(0, 0, 0, 1);
+  color:rgb(0,32,112);
   font-style:normal;
   font-family:Inter;
   font-size:40px;
@@ -647,7 +648,7 @@ content:url(assets/images/background.png)
 .Create-account-button {
     position: absolute;
     left: 50%;
-    top: 72%;
+    top: 60%;
     z-index: 18;
     margin-left: -191px;
     width: 382px;
@@ -738,4 +739,11 @@ content:url(assets/images/background.png)
   font-family:Inter;
   font-size:24px;
   line-height:29px;
+}
+
+h {
+  color:rgb(0,32,112);
+}
+p {
+  color:rgb(0,32,112);
 }
