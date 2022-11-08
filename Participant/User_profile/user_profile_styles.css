@@ -262,8 +262,10 @@ head {
     z-index: 27;
     width: 640px;
     height: 170px;
+    border-color: gray;
+    border-width: 5px;
     background-color: rgba(250, 251, 252, 1);
-    filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.3));
     border-radius: 15px;
 }
 
@@ -367,7 +369,8 @@ head {
     height:820px;
     z-index: 2;
     overflow: hidden;
-    background-color: white;
+    filter: drop-shadow(-1px 1px 5px rgba(0,0,0,0.1));
+    background-color: rgba(250, 251, 252, 1);
     border-radius: 10px;
 }
 .info-form{
@@ -421,7 +424,8 @@ head {
     width: 400px;
     height: 300px;
     overflow: hidden;
-    background-color: white;
+    background-color: rgba(250, 251, 252, 1);
+    filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.3));
     border-radius: 10px;
 }
 .history-chart{

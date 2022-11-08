@@ -234,7 +234,7 @@ head {
     width: 700px;
     height: 750px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgba(250, 251, 252, 1);
     overflow-y: auto;
     overflow-x:hidden;
     margin-left:20px; 
