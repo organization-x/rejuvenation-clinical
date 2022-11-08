@@ -185,10 +185,9 @@ head {
   content:url(assets/images/background.jpg)
 }
 .info-box {
-    border-width: 2px;
-    border: solid;
-    border-color: rgb(0,32,112);
-    border-radius:10px;
+    background-color: rgba(250, 251, 252, 1);
+    filter: drop-shadow(-1px 1px 5px rgba(0,0,0,0.1));
+    border-radius: 10px;
 }
 .table-box {
     text-align: center;
@@ -247,14 +246,12 @@ head {
     width: 700px;
     height: 750px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgba(250, 251, 252, 1);
     overflow-y: auto;
     overflow-x:hidden;
     margin-left:20px; 
     margin-top:20px;
-    border-width:2px;
-    border: solid;
-    border-color: rgb(0,32,112)
+    filter: drop-shadow(-1px 1px 5px rgba(0,0,0,0.1));
 }
 .box-label{
     position:relative;
@@ -268,9 +265,6 @@ head {
     position: relative;
     width: 665px;
     height: auto;
-    border-width: 2px;
-    border: solid;
-    border-color: rgb(0,32,112);
     text-wrap:normal;
     font-family:Inter;
     font-size:20px;
