@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Sign in new</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
+    <!-- Bootstrap w/ js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="sign_in_styles-bootstrap.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="assets/images/temp_icon.png">
+</head>
+<body>
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div content="height=device-height, width=device-width, justify-content=center">
+        <Header class="prime-header flex">
+            <div>
+                <img src="assets/images/rejuvenation_tech_logo_words.png" alt="logo" class="logo">
+            </div>
+
+            <button class="mobile-nav-toggle"
+                    aria-controls="prime-nav" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <span class="top-line common"></span>
+                <span class="middle-line common"></span>
+                <span class="bottom-line common"></span>
+            </button>
+
+            <nav>
+                <ul id="prime-nav" data-visible="false" class="prime-nav flex">
+                    <li>
+                        <a class="nav-link" href="https://rejuvenationtech.com">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://rejuvenationtech.com/Team/">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href=""> <img src="assets/images/profile_icon.png" alt="Profile Icon" height="100%" width="15%"></a>
+                    </li>
+                </ul>
+            </nav>
+        </Header>
+        <div class="navigation-adjustment">
+            <img class="BG" />
+            <!--Sign in platform-->
+            <div class="container bg-white platform">
+                <!--Heading displayed at the top of the platform-->
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <h1 class="heading">Sign In</h1>
+                    </div>
+                </div>
+                <!-- Subheading displayed under the heading-->
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <p class="sub-heading">Stay updated on your clinical trials</p>
+                    </div>
+                </div>
+                <!--Input field for the user's email address-->
+                <div class="row justify-content-center vertical-spacing">
+                    <div class="form-floating col-11">
+                        <input type="email" class="form-control border border-dark" id="floatingInput" placeholder="name@example.com">
+                        <label class="margin-left txt-label" for="floatingInput">Email address</label>
+                    </div>
+                </div>
+                <!--Input field for the user's password-->
+                <div class="row justify-content-center vertical-spacing">
+                    <div class="form-floating col-11">
+                        <input type="password" id="passwordInput" class="form-control border border-dark" id="floatingPassword" placeholder="Password">
+                        <label class="margin-left txt-label" for="floatingPassword">Password</label>
+                        <p class="show-pass txt-btn" onclick="togglePassword()">show</p>
+                        <script>
+                            function togglePassword() {
+                                var x = document.getElementById("passwordInput");
+                                if (x.type === "password") {
+                                    x.type = "text";
+                                } else {
+                                    x.type = "password";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+                <!--Forgot password text/link-->
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <p class="forgot-password txt-btn">Forgot Password?</p>
+                    </div>
+                    <div class="col-5" name="deadSpace"></div>
+                </div>
+                <!--Sign in button-->
+                <div class="row justify-content-center vertical-spacing">
+                    <input type="submit" class="btn btn-primary sign-in-btn rounded-pill" value="Sign In" />
+                </div>
+                <!--Sign up prompt/link-->
+                <div class="row justify-content-center vertical-spacing">
+                    <p class="basic-txt">
+                        New to Natural Trials? <a class="txt-btn sign-up-btn" href="">Sign Up</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End Document
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
