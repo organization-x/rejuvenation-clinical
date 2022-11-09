@@ -20,7 +20,7 @@ class UserRegisterForm(UserCreationForm):
 
 form = AccountForm()
 one_account = Account()
-print(one_account.get_user())
+print(".get_user() function:", one_account.get_user())
 
 #article = get_object_or_404(Account, pk=1)
 #article = Account.objects.get(pk=1)

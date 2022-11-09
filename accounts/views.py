@@ -52,4 +52,5 @@ def verify_view(request):
                 return redirect('home')
             else:
                 return redirect('login-view')
+
     return render(request, 'verify.html', {'form' : form})

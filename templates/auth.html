@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+<!-- templates/registration/login.html -->
+{% block head %} <link rel="stylesheet" href="/static/css/sign_in.css"> {% endblock head %}
+
+
+
+{% block title %}Login{% endblock %}
+<body>
+  {% block content %}
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div content="height=device-height, width=device-width, justify-content=center">
+      <img class="BG" src="{% static 'images/background.png' %}"/>
+      <div class="gradient">
+      </div>
+
+    </div>
+      <div class="platform">
+          <div class="Sign-In">
+              <h1>Sign In</h1>
+          </div>
+          <div class="Stay-updated">
+              <p>Stay updated on your clinical trials</p>
+          </div>
+          <form class="form-container" method="post" action="TBD">
+              <div class="form-input">
+                  <label>Email</label>
+                  <input id="email" type="email" required/>
+              </div>
+              <div class="form-input">
+                  <label>Password</label>
+                  <input id="passwordBox" type="password" required/>
+                  <p class="show" onclick="togglePassword()">show</p>
+                  <script>
+                  function togglePassword() {
+                    var x = document.getElementById("passwordBox");
+                    if (x.type === "password") {
+                      x.type = "text";
+                    } else {
+                      x.type = "password";
+                    }
+                  }
+                  </script>
+              </div>
+              <input type="submit" class="Sign-in-button" value="Sign In" />
+          </form>
+          <div class="Forgot-password">
+              <p>Forgot Password</p>
+          </div>
+          <div class="Sign-up-link">
+              <p class="New-to">New to Natural Trials?</p>
+              <a href="{% url 'signup' %}">Sign Up</a>
+          </div>
+      </div>
+  <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+{% endblock %}
+
+</body>
