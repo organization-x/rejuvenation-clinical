@@ -25,13 +25,13 @@ from pages.views import (
 )
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("accounts/", include("accounts.urls")),
-    path("accounts/", include("django.contrib.auth.urls")),
-    path("pages/", include("pages.urls")),
-    path("", home_view, name='home'),
+    path('admin/', admin.site.urls),
+    path('accounts/', include('accounts.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('pages/', include('pages.urls')),
+    path('', home_view, name='home'),
     path('login/', auth_view, name='login-view'),
-    path('verify/', verify_view, name = 'verify-view'),
+    path('verify/', verify_view, name='verify-view'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

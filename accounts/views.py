@@ -27,11 +27,11 @@ def auth_view(request):
     if request.method == "POST":
         username = request.POST.get('username')
         password = request.POST.get('password')
-        user = authenticate(request, username = username, password = password)
+        user = authenticate(request, username=username, password=password)
         if user is not None:
             request.session['pk'] = user.pk
-            return redirect('login') #remember to change after verify page is done
-    return render(request, 'auth.html', {'form': form})
+            return redirect('verify-view') #remember to change after verify page is done
+    return render(request, 'login.html', {'form': form})
 
 def verify_view(request):
     form = CodeForm(request.POST or None)
