@@ -24,7 +24,7 @@
           <div class="Stay-updated">
               <p>Stay updated on your clinical trials</p>
           </div>
-          <form class="form-container" method="post" action="TBD">
+          <form class="form-container" method="POST" action="">
               <div class="form-input">
                   <label>Email</label>
                   <input id="email" type="email" required/>
@@ -44,7 +44,9 @@
                   }
                   </script>
               </div>
-              <input type="submit" class="Sign-in-button" value="Sign In" />
+              {% csrf_token %}
+              {{form}}
+              <button type="submit" class="Sign-in-button">Sign In</button> 
           </form>
           <div class="Forgot-password">
               <p>Forgot Password</p>
