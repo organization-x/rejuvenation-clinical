@@ -14,7 +14,7 @@ from django.shortcuts import redirect
 
 class SignUpView(generic.CreateView):
     form_class = UserCreationForm
-    success_url = reverse_lazy("login")
+    success_url = reverse_lazy("login/")
     template_name = "registration/signup.html"
 
 @login_required
@@ -29,7 +29,7 @@ def auth_view(request):
         user = authenticate(request, username = username, password = password)
         if user is not None:
             request.session['pk'] = user.pk
-            return redirect('login') #remember to change after verify page is done
+            return redirect('login/') #remember to change after verify page is done
     return render(request, 'auth.html', {'form': form})        
 
 def verify_view(request):
