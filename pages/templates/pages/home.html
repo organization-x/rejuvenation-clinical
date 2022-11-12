@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+{% if user.is_authenticated %}
+
+  <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div content="height=device-height, width=device-width, justify-content=center">
+        <img class="BG" />
+        <h1 class="company-name">Profile</h1>
+        <!--List of all ongoing trials-->
+        <div class="information">
+            <div class="current-trials">
+                <h3 class="header">Current Trials</h3>
+                <div class="trial-list">
+                    <button class="trial">Company Name</button>
+                    <button class="trial">Also Company name</button>
+                </div>
+            </div>
+            <div class="trial-history">
+                <h3 class="header">Trial History</h3>
+                <canvas id="tempChart" class="history-chart"></canvas>
+                <script>
+                    var xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+                    var yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+                    new Chart("tempChart", {
+                        type: "line",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                                fill: false,
+                                backgroundColor: "rgba(0,0,255,1.0)",
+                                borderColor: "rgba(0,0,255,0.2)",
+                                data: yValues
+                            }]
+                        },
+                        options: {
+                            legend: { display: false },
+                            scales: {
+                                yAxes: [{ ticks: { min: 6, max: 16 } }],
+                            }
+                        }
+                    });
+                </script>
+            </div>
+            <div class="profile-info">
+                <h3 class="header">Your Information</h3>
+                <form class="info-form">
+                    <div class="half-box">
+                        <label class="indicator">First Name</label>
+                        <input class="info-box" />
+                    </div>
+                    <div class="half-box">
+                        <label class="indicator">Last Name</label>
+                        <input class="info-box" />
+                    </div>
+                    <div class="full-box">
+                        <label class="indicator">E-mail</label>
+                        <input class="info-box" />
+                    </div>
+                    <div class="half-box">
+                        <label class="indicator">Phone Number</label>
+                        <input class="info-box" />
+                    </div>
+                    <div class="half-box">
+                        <label class="indicator">Date of Birth</label>
+                        <input class="info-box" />
+                    </div>
+                    <div class="full-box">
+                        <label class="indicator">Address 1</label>
+                        <input class="info-box" />
+                    </div>
+                    <div class="half-box">
+                        <label class="indicator">Address 2</label>
+                        <input class="info-box" />
+                    </div>
+                    <div class="half-box">
+                        <label class="indicator">Country</label>
+                        <input class="info-box" />
+                    </div>
+                    <div class="half-box">
+                        <label class="indicator">City</label>
+                        <input class="info-box" />
+                    </div>
+                    <div class="half-box">
+                        <label class="indicator">Zip Code</label>
+                        <input class="info-box" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Document
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+{% else %}
+<!-- hacker way of redirecting if user is not logged in -->
+  <meta http-equiv="Refresh" content="0; url='{% url 'login' %}" />
+{% endif %}
+{% endblock content %}
